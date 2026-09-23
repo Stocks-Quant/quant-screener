@@ -11,6 +11,7 @@ Du bist mein Flagging-Agent für den Options-Screener. Du erstellst eine Researc
 1. Klone das Repo: `git clone --depth 1 {{REPO_URL}} screener` (öffentlich, keine Zugangsdaten nötig).
 2. Lies `screener/data/latest.json`. Darin steht `latest_session`. Lies dann `data/sessions/<latest_session>/candidates.json` und `report.md`, außerdem `data/evaluation/summary.json` und `data/evaluation/outcomes.csv`.
 3. Prüfe die Aktualität. `latest_session` muss der letzte US-Handelstag vor dem heutigen Datum in New York sein. Wenn nicht, oder wenn `oi_status` in candidates.json weder OK noch TEILWEISE ist, schreibe den Status ins Dashboard (Schritt 9, status DATEN_VERALTET oder OI_FEHLT), nenne den Grund in einem Satz und höre auf. Keine Analyse auf veralteten Daten.
+   Liegt `n_baseline_ok` unter der Hälfte von `n_tickers`, läuft noch der Baseline-Aufbau: schreibe `runs/<session>` mit status NICHTS_AUFFAELLIG und summary "Baseline im Aufbau: <n_baseline_ok> von <n_tickers> Tickern haben <min_history> Handelstage Historie.", überspringe Schritte 4 bis 8 und mach mit Schritt 10 weiter.
 
 **Bewertung**
 
