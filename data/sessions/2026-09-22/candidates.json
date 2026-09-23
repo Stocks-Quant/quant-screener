@@ -1,0 +1,431 @@
+{
+  "session": "2026-09-22",
+  "generated_at": "2026-09-23T12:18:52Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 0,
+  "n_baseline_ok": 0,
+  "min_history": 15,
+  "market_elevated_share": "UNAVAILABLE",
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [],
+  "elevated_not_candidates": [],
+  "incomplete": [
+    {
+      "symbol": "AAPL",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "ABBV",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "ABT",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "ACN",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "ADBE",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "AMAT",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "AMD",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "AMGN",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "AMT",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "AMZN",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "ANET",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "AVGO",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "AXP",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "BA",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "BAC",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "BKNG",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "BLK",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "BMY",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "BNY",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "BRK.B",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "C",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "CAT",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "CMCSA",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "COF",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "COP",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "COST",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "CRM",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "CSCO",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "CVS",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "CVX",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "DE",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "DELL",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "DHR",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "DIS",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "DUK",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "EMR",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "FDX",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "GD",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "GE",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "GEV",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "GILD",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "GM",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "GOOG",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "GOOGL",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "GS",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "HD",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "IBM",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "INTC",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "INTU",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "ISRG",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "JNJ",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "JPM",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "KO",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "LIN",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "LLY",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "LMT",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "LOW",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "LRCX",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MA",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MCD",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MDLZ",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MDT",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "META",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MMM",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MO",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MRK",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MS",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MSFT",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "MU",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "NEE",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "NFLX",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "NOW",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "NVDA",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "ORCL",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "PANW",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "PEP",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "PFE",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "PG",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "PLTR",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "PM",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "QCOM",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "RTX",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "SBUX",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "SCHW",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "SNDK",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "SO",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "T",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "TMO",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "TMUS",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "TSLA",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "TXN",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "UBER",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "UNH",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "UNP",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "UPS",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "USB",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "V",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "VZ",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "WFC",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "WMT",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    },
+    {
+      "symbol": "XOM",
+      "issues": "Baseline erst 0 von 15 Handelstagen"
+    }
+  ]
+}
