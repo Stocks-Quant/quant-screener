@@ -79,6 +79,11 @@ def smoke(settings: dict, provider=None) -> int:
     import shutil
 
     provider = provider or make_provider(settings)
+    spy = provider.history("SPY", "1mo")
+    print("SPY, letzte Tagesbalken (Provisional = aus Kursquote ergänzt):")
+    print(spy.tail(3).to_string(index=False))
+    if hasattr(provider, "quote"):
+        print("SPY Kursquote:", provider.quote("SPY"))
     with tempfile.TemporaryDirectory() as tmp:
         root = Path(tmp)
         shutil.copytree(Paths().config, root / "config")
