@@ -1,0 +1,13 @@
+symbol,yahoo_symbol,name,role
+SPY,SPY,SPDR S&P 500 ETF,Markt
+XLK,XLK,Technology Select Sector SPDR,Sektor: Information Technology
+XLV,XLV,Health Care Select Sector SPDR,Sektor: Health Care
+XLF,XLF,Financial Select Sector SPDR,Sektor: Financials
+XLY,XLY,Consumer Discretionary Select Sector SPDR,Sektor: Consumer Discretionary
+XLC,XLC,Communication Services Select Sector SPDR,Sektor: Communication Services
+XLI,XLI,Industrial Select Sector SPDR,Sektor: Industrials
+XLP,XLP,Consumer Staples Select Sector SPDR,Sektor: Consumer Staples
+XLE,XLE,Energy Select Sector SPDR,Sektor: Energy
+XLU,XLU,Utilities Select Sector SPDR,Sektor: Utilities
+XLRE,XLRE,Real Estate Select Sector SPDR,Sektor: Real Estate
+XLB,XLB,Materials Select Sector SPDR,Sektor: Materials

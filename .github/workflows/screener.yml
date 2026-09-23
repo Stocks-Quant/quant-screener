@@ -1,0 +1,92 @@
+name: Options-Screener
+
+on:
+  schedule:
+    # Zeiten in UTC. Abend: nach US-Handelsschluss (17:37 New York im Sommer, 16:37 im Winter).
+    - cron: "37 21 * * 1-5"
+    # Morgen: Open Interest nach dem Handelstag, danach Analyse und Auswertung.
+    - cron: "41 11 * * 1-5"
+    # Zweiter und dritter Versuch, falls die Quelle das Open Interest noch nicht aktualisiert hat.
+    - cron: "7 13 * * 1-5"
+    - cron: "33 15 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "smoke = Live-Test mit 3 Tickern, schreibt nichts"
+        type: choice
+        options: [smoke, evening, morning, analyze, evaluate]
+        default: smoke
+      session:
+        description: "Handelstag YYYY-MM-DD (nur analyze)"
+        required: false
+      extra:
+        description: "zusätzliche Argumente, z. B. --allow-past oder --force"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: screener
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      # Branch statt Commit: ein wartender Lauf startet so auf dem Stand, den der vorige Lauf gepusht hat.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhängigkeiten
+        run: pip install -r requirements.txt
+
+      - name: Modus bestimmen
+        id: mode
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          INPUT_MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ]; then MODE="$INPUT_MODE";
+          elif [ "$SCHEDULE" = "37 21 * * 1-5" ]; then MODE="evening";
+          else MODE="morning"; fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "Modus: $MODE"
+
+      - name: Tests
+        if: steps.mode.outputs.mode == 'smoke'
+        run: python -m pytest -q
+
+      - name: Lauf
+        env:
+          MODE: ${{ steps.mode.outputs.mode }}
+          SESSION: ${{ inputs.session }}
+          EXTRA: ${{ inputs.extra }}
+        run: |
+          ARGS=("$MODE")
+          if [ -n "$SESSION" ]; then ARGS+=(--session "$SESSION"); fi
+          python -m screener.run "${ARGS[@]}" $EXTRA
+
+      - name: Daten committen
+        if: steps.mode.outputs.mode != 'smoke'
+        env:
+          MODE: ${{ steps.mode.outputs.mode }}
+        run: |
+          git config user.name "screener-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -m "Daten: $MODE $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            if git pull --rebase --quiet && git push --quiet; then exit 0; fi
+            sleep 10
+          done
+          exit 1

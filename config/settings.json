@@ -1,0 +1,23 @@
+{
+  "max_expiry_days": 120,
+  "top_contracts": 10,
+  "baseline_window": 30,
+  "min_history": 15,
+  "z_threshold": 2.0,
+  "ratio_threshold": 2.0,
+  "opening_share_threshold": 0.3,
+  "price_quiet_z": 1.0,
+  "max_candidates": 10,
+  "short_dated_days": 7,
+  "sector_wide_share": 0.4,
+  "market_wide_share": 0.3,
+  "event_lookahead_days": 30,
+  "oi_base_tolerance": 0.02,
+  "oi_unchanged_share_stale": 0.8,
+  "eval_horizon_days": 10,
+  "eval_hit_sigma": 2.0,
+  "eval_sigma_window": 60,
+  "request_pause_seconds": 0.35,
+  "request_retries": 3,
+  "oi_min_coverage": 0.5
+}

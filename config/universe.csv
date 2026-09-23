@@ -1,0 +1,102 @@
+symbol,yahoo_symbol,name,sector,sector_etf
+AAPL,AAPL,Apple Inc.,Information Technology,XLK
+ABBV,ABBV,AbbVie,Health Care,XLV
+ABT,ABT,Abbott Laboratories,Health Care,XLV
+ACN,ACN,Accenture,Information Technology,XLK
+ADBE,ADBE,Adobe Inc.,Information Technology,XLK
+AMAT,AMAT,Applied Materials,Information Technology,XLK
+AMD,AMD,Advanced Micro Devices,Information Technology,XLK
+AMGN,AMGN,Amgen,Health Care,XLV
+AMT,AMT,American Tower,Real Estate,XLRE
+AMZN,AMZN,Amazon,Consumer Discretionary,XLY
+ANET,ANET,Arista Networks,Information Technology,XLK
+AVGO,AVGO,Broadcom,Information Technology,XLK
+AXP,AXP,American Express,Financials,XLF
+BA,BA,Boeing,Industrials,XLI
+BAC,BAC,Bank of America,Financials,XLF
+BKNG,BKNG,Booking Holdings,Consumer Discretionary,XLY
+BLK,BLK,BlackRock,Financials,XLF
+BMY,BMY,Bristol Myers Squibb,Health Care,XLV
+BNY,BNY,BNY Mellon,Financials,XLF
+BRK.B,BRK-B,Berkshire Hathaway (Class B),Financials,XLF
+C,C,Citigroup,Financials,XLF
+CAT,CAT,Caterpillar Inc.,Industrials,XLI
+CMCSA,CMCSA,Comcast,Communication Services,XLC
+COF,COF,Capital One,Financials,XLF
+COP,COP,ConocoPhillips,Energy,XLE
+COST,COST,Costco,Consumer Staples,XLP
+CRM,CRM,Salesforce,Information Technology,XLK
+CSCO,CSCO,Cisco,Information Technology,XLK
+CVS,CVS,CVS Health,Health Care,XLV
+CVX,CVX,Chevron Corporation,Energy,XLE
+DE,DE,Deere & Company,Industrials,XLI
+DELL,DELL,Dell Technologies,Information Technology,XLK
+DHR,DHR,Danaher Corporation,Health Care,XLV
+DIS,DIS,Walt Disney Company,Communication Services,XLC
+DUK,DUK,Duke Energy,Utilities,XLU
+EMR,EMR,Emerson Electric,Industrials,XLI
+FDX,FDX,FedEx,Industrials,XLI
+GD,GD,General Dynamics,Industrials,XLI
+GE,GE,GE Aerospace,Industrials,XLI
+GEV,GEV,GE Vernova,Industrials,XLI
+GILD,GILD,Gilead Sciences,Health Care,XLV
+GM,GM,General Motors,Consumer Discretionary,XLY
+GOOG,GOOG,Alphabet Inc. (Class C),Communication Services,XLC
+GOOGL,GOOGL,Alphabet Inc. (Class A),Communication Services,XLC
+GS,GS,Goldman Sachs,Financials,XLF
+HD,HD,Home Depot,Consumer Discretionary,XLY
+IBM,IBM,IBM,Information Technology,XLK
+INTC,INTC,Intel,Information Technology,XLK
+INTU,INTU,Intuit,Information Technology,XLK
+ISRG,ISRG,Intuitive Surgical,Health Care,XLV
+JNJ,JNJ,Johnson & Johnson,Health Care,XLV
+JPM,JPM,JPMorgan Chase,Financials,XLF
+KO,KO,Coca-Cola Company,Consumer Staples,XLP
+LIN,LIN,Linde plc,Materials,XLB
+LLY,LLY,Eli Lilly and Company,Health Care,XLV
+LMT,LMT,Lockheed Martin,Industrials,XLI
+LOW,LOW,Lowe's,Consumer Discretionary,XLY
+LRCX,LRCX,Lam Research,Information Technology,XLK
+MA,MA,Mastercard,Financials,XLF
+MCD,MCD,McDonald's,Consumer Discretionary,XLY
+MDLZ,MDLZ,Mondelez International,Consumer Staples,XLP
+MDT,MDT,Medtronic,Health Care,XLV
+META,META,Meta Platforms,Communication Services,XLC
+MMM,MMM,3M,Industrials,XLI
+MO,MO,Altria,Consumer Staples,XLP
+MRK,MRK,Merck & Co.,Health Care,XLV
+MS,MS,Morgan Stanley,Financials,XLF
+MSFT,MSFT,Microsoft,Information Technology,XLK
+MU,MU,Micron Technology,Information Technology,XLK
+NEE,NEE,NextEra Energy,Utilities,XLU
+NFLX,NFLX,Netflix,Communication Services,XLC
+NOW,NOW,ServiceNow,Information Technology,XLK
+NVDA,NVDA,Nvidia,Information Technology,XLK
+ORCL,ORCL,Oracle Corporation,Information Technology,XLK
+PANW,PANW,Palo Alto Networks,Information Technology,XLK
+PEP,PEP,PepsiCo,Consumer Staples,XLP
+PFE,PFE,Pfizer,Health Care,XLV
+PG,PG,Procter & Gamble,Consumer Staples,XLP
+PLTR,PLTR,Palantir Technologies,Information Technology,XLK
+PM,PM,Philip Morris International,Consumer Staples,XLP
+QCOM,QCOM,Qualcomm,Information Technology,XLK
+RTX,RTX,RTX Corporation,Industrials,XLI
+SBUX,SBUX,Starbucks,Consumer Discretionary,XLY
+SCHW,SCHW,Charles Schwab Corporation,Financials,XLF
+SNDK,SNDK,Sandisk,Information Technology,XLK
+SO,SO,Southern Company,Utilities,XLU
+T,T,AT&T,Communication Services,XLC
+TMO,TMO,Thermo Fisher Scientific,Health Care,XLV
+TMUS,TMUS,T-Mobile US,Communication Services,XLC
+TSLA,TSLA,Tesla,Consumer Discretionary,XLY
+TXN,TXN,Texas Instruments,Information Technology,XLK
+UBER,UBER,Uber,Industrials,XLI
+UNH,UNH,UnitedHealth Group,Health Care,XLV
+UNP,UNP,Union Pacific Corporation,Industrials,XLI
+UPS,UPS,United Parcel Service,Industrials,XLI
+USB,USB,U.S. Bancorp,Financials,XLF
+V,V,Visa Inc.,Financials,XLF
+VZ,VZ,Verizon,Communication Services,XLC
+WFC,WFC,Wells Fargo,Financials,XLF
+WMT,WMT,Walmart,Consumer Staples,XLP
+XOM,XOM,ExxonMobil,Energy,XLE
