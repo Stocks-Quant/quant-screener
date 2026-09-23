@@ -56,8 +56,11 @@ def main(argv: list[str] | None = None, provider=None, paths: Paths | None = Non
 
     if args.mode == "morning":
         meta = run_morning(paths, provider or make_provider(settings), settings, now, args.session, args.force, symbols)
-        if meta.get("status") != "SKIPPED":
-            analyze_session(paths, settings, meta["session"])
+        session = meta["session"]
+        analyzed = (paths.session(session) / "analysis.csv").exists()
+        if meta.get("status") != "SKIPPED" or not analyzed:
+            # A skipped retry still analyses when an earlier attempt fetched the data but stopped before analysing.
+            analyze_session(paths, settings, session)
             evaluate(paths, settings)
         return 0
 

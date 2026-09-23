@@ -47,6 +47,7 @@ class FakeMarket:
         self.stale_oi_for: set = set()  # sessions for which the morning feed still shows old OI
         self.stale_symbols: set = set()  # symbols whose morning OI is still the old one
         self.fail_chains = False  # every option chain request fails
+        self.history_gaps: set = set()  # sessions missing from the daily price history (Yahoo lag)
 
     def _seed(self, *parts) -> int:
         return abs(hash(("fm",) + parts)) % (2**32)
@@ -135,6 +136,7 @@ class FakeProvider:
         self.request_count += 1
         df = self.m.prices[sym]
         last = self.vol_session.isoformat()
+        df = df[~df["Date"].isin({d.isoformat() for d in self.m.history_gaps})]
         return df[df["Date"] <= last].tail(252).reset_index(drop=True)
 
     def expirations(self, sym: str) -> list[str]:

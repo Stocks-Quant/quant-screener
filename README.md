@@ -16,9 +16,12 @@ Er ist ein Screener, kein Signal. Ungewöhnliche Aktivität ist ein Grund, sich 
 | Zeit (UTC) | Berlin Sommerzeit | Lauf | Was passiert |
 |---|---|---|---|
 | 21:37 Mo bis Fr | 23:37 | Abend | Tagesbalken, Aktienvolumen, Optionsvolumen des Handelstags, Termine |
+| 23:17 und 01:47 | 01:17, 03:47 | Abend, Reserve | nur falls der erste Abendlauf fehlte oder unvollständig war |
 | 11:41 Mo bis Fr | 13:41 | Morgen | Open Interest nach dem Handelstag, Analyse, Auswertung |
-| 13:07 und 15:33 | 15:07, 17:33 | Wiederholung | nur falls die Quelle das Open Interest noch nicht aktualisiert hatte |
-| ca. 16:15 | 18:15 | Claude | Flagging-Agent liest die Analyse und füllt das Dashboard |
+| 13:07, 15:33, 17:13 | 15:07, 17:33, 19:13 | Morgen, Reserve | nur was fehlt: altes OI, fehlgeschlagene Ticker, fehlende Analyse |
+| 18:15 | 20:15 | Claude | Flagging-Agent liest die Analyse und füllt das Dashboard |
+
+GitHub startet geplante Läufe oft verspätet und lässt manche aus; am 23.09.2026 kam der 11:41-Lauf erst um 15:33. Deshalb die Reservetermine. Ein verspäteter Abendlauf erfasst den Handelstag noch bis 03:00 Uhr New York (`late_evening_cutoff_hour_et`) und ist in `evening_meta.json` als `late_run` markiert. Der Morgenlauf bestimmt den Handelstag aus Yahoos Kurshistorie und den vorhandenen Abenddaten, weil Yahoo den letzten Tagesbalken teils erst Stunden später liefert.
 
 Warum zwei Läufe: Optionsvolumen steht nach Handelsschluss fest, das Open Interest erst am nächsten Morgen. Nur die Veränderung des Open Interest zeigt, ob Positionen eröffnet oder geschlossen wurden. Ohne sie ist eine Flag kein Beleg für irgendetwas, deshalb gibt es ohne sie keine Kandidaten.
 

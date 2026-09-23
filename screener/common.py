@@ -42,6 +42,7 @@ DEFAULT_SETTINGS = {
     "event_lookahead_days": 30,
     "oi_base_tolerance": 0.02,
     "oi_min_coverage": 0.5,
+    "late_evening_cutoff_hour_et": 3,  # delayed evening runs may still record the previous session until 03:00 New York
     "oi_unchanged_share_stale": 0.8,
     "eval_horizon_days": 10,
     "eval_hit_sigma": 2.0,
@@ -132,7 +133,13 @@ def read_csv(path: Path) -> pd.DataFrame:
 
 
 def read_csv_if_exists(path: Path) -> pd.DataFrame | None:
-    return read_csv(path) if path.exists() else None
+    """None for a missing file and for an empty one (pandas writes 0 bytes for a frame without columns)."""
+    if not path.exists() or path.stat().st_size == 0:
+        return None
+    try:
+        return read_csv(path)
+    except pd.errors.EmptyDataError:
+        return None
 
 
 def write_json(obj, path: Path) -> None:

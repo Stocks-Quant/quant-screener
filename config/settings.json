@@ -19,5 +19,6 @@
   "eval_sigma_window": 60,
   "request_pause_seconds": 0.35,
   "request_retries": 3,
-  "oi_min_coverage": 0.5
+  "oi_min_coverage": 0.5,
+  "late_evening_cutoff_hour_et": 3
 }

@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 from .common import (ET, UNAVAILABLE, Paths, et_date, iso_utc, load_benchmarks, load_universe,
-                     parse_date, read_csv_if_exists, read_json, write_csv, write_json, write_prices)
+                     list_sessions, parse_date, read_csv_if_exists, read_json, write_csv, write_json, write_prices)
 from .events import structural_events
 from .provider import CHAIN_COLS, ProviderError
 
@@ -215,12 +215,28 @@ def _calendar_block(provider, ysym: str, fetched_at: str) -> dict:
 def run_evening(paths: Paths, provider, settings: dict, now_utc: datetime, allow_past: bool = False,
                 symbols: list[str] | None = None) -> dict:
     started = iso_utc(now_utc)
-    today = et_date(now_utc).isoformat()
+    et_now = now_utc.astimezone(ET)
+    today = et_now.date().isoformat()
     spy = provider.history("SPY", "1y")
     session = spy["Date"].iloc[-1]
+    late = False
     if session != today and not allow_past:
-        log.info("Kein Handelstag heute (%s); letzter Tagesbalken %s. Nichts zu tun.", today, session)
-        return {"status": "SKIPPED", "reason": f"kein Tagesbalken für {today}", "session": session}
+        # A delayed scheduled run after midnight New York may still record the previous session: volume stays until
+        # the next open. The window ends early, before the source publishes the overnight open interest.
+        prev_day = (et_now.date() - timedelta(days=1)).isoformat()
+        cutoff = int(settings.get("late_evening_cutoff_hour_et", 3))
+        if et_now.hour < cutoff and session >= prev_day and not (paths.session(session) / "evening_meta.json").exists():
+            late = True
+            log.info("Verspäteter Abendlauf nach Mitternacht New York: erfasse %s.", session)
+        else:
+            log.info("Kein Handelstag heute (%s); letzter Tagesbalken %s. Nichts zu tun.", today, session)
+            return {"status": "SKIPPED", "reason": f"kein Tagesbalken für {today}", "session": session}
+    prev_meta = read_json(paths.session(session) / "evening_meta.json")
+    if prev_meta and not allow_past and not symbols and set(prev_meta.get("options_status_counts", {})) == {"OK"} \
+            and prev_meta.get("price_unavailable", 1) == 0:
+        # Several evening schedules exist as a backup against dropped GitHub runs; the first complete one wins.
+        log.info("Abenddaten für %s bereits vollständig erfasst.", session)
+        return {"status": "SKIPPED", "reason": "Abenddaten bereits vollständig", "session": session}
 
     universe = load_universe(paths)
     if symbols:
@@ -273,6 +289,7 @@ def run_evening(paths: Paths, provider, settings: dict, now_utc: datetime, allow
     status_counts = pd.Series([r["options_status"] for r in rows]).value_counts().to_dict()
     meta = {
         "run": "evening", "status": "OK", "session": session, "started_at": started, "finished_at": iso_utc(),
+        "late_run": late,
         "source": provider.source, "n_tickers": len(rows), "options_status_counts": status_counts,
         "price_unavailable": int(sum(r["price_status"] != "OK" for r in rows)),
         "request_count": getattr(provider, "request_count", None), "errors": errors,
@@ -287,19 +304,27 @@ def run_evening(paths: Paths, provider, settings: dict, now_utc: datetime, allow
 
 # ---------------------------------------------------------------------------------------------- morning
 
-def previous_session(provider, now_utc: datetime) -> str:
+def previous_session(provider, now_utc: datetime, paths: Paths | None = None) -> str:
+    """Last trading day before today (New York).
+
+    Yahoo's daily history sometimes lacks the latest bar for hours; during market hours the quote cannot fill the
+    gap because it already belongs to today. Sessions the evening run recorded are trading days too, so both
+    sources are combined and the later date wins.
+    """
     today = et_date(now_utc).isoformat()
     spy = provider.history("SPY", "3mo")
-    prior = [d for d in spy["Date"] if d < today]
+    prior = {d for d in spy["Date"] if d < today}
+    if paths is not None:
+        prior |= {s for s in list_sessions(paths, "evening_meta.json") if s < today}
     if not prior:
         raise ProviderError("kein vorheriger Handelstag in der SPY-Historie")
-    return prior[-1]
+    return max(prior)
 
 
 def run_morning(paths: Paths, provider, settings: dict, now_utc: datetime, session: str | None = None,
                 force: bool = False, symbols: list[str] | None = None) -> dict:
     started = iso_utc(now_utc)
-    expected = previous_session(provider, now_utc)
+    expected = previous_session(provider, now_utc, paths)
     if session and session != expected:
         # Later OI would be recorded as "after the session" and produce a wrong change. Re-analysis: use `analyze`.
         raise ValueError(f"Morgenlauf nur für den letzten Handelstag ({expected}) möglich, nicht für {session}")

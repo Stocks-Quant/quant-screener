@@ -2,13 +2,19 @@ name: Options-Screener
 
 on:
   schedule:
-    # Zeiten in UTC. Abend: nach US-Handelsschluss (17:37 New York im Sommer, 16:37 im Winter).
+    # Zeiten in UTC. GitHub startet geplante Läufe oft verspätet und lässt manche ganz aus (am 23.09.2026 kam der
+    # 11:41-Lauf erst um 15:33). Deshalb gibt es je Lauf mehrere Termine; wer die Arbeit schon erledigt findet,
+    # überspringt sie in unter einer Minute.
+    # Abend: nach US-Handelsschluss. 21:37, 23:17 und 01:47 UTC liegen im Sommer wie im Winter am selben Tag New York.
     - cron: "37 21 * * 1-5"
-    # Morgen: Open Interest nach dem Handelstag, danach Analyse und Auswertung.
+    - cron: "17 23 * * 1-5"
+    - cron: "47 1 * * 2-6"
+    # Morgen: Open Interest nach dem Handelstag, danach Analyse und Auswertung. Weitere Termine holen nur nach,
+    # was noch fehlt (altes OI, fehlgeschlagene Ticker, fehlende Analyse).
     - cron: "41 11 * * 1-5"
-    # Zweiter und dritter Versuch, falls die Quelle das Open Interest noch nicht aktualisiert hat.
     - cron: "7 13 * * 1-5"
     - cron: "33 15 * * 1-5"
+    - cron: "13 17 * * 1-5"
   workflow_dispatch:
     inputs:
       mode:
@@ -56,8 +62,12 @@ jobs:
           INPUT_MODE: ${{ inputs.mode }}
         run: |
           if [ "$EVENT" = "workflow_dispatch" ]; then MODE="$INPUT_MODE";
-          elif [ "$SCHEDULE" = "37 21 * * 1-5" ]; then MODE="evening";
-          else MODE="morning"; fi
+          else
+            case "$SCHEDULE" in
+              "37 21 * * 1-5"|"17 23 * * 1-5"|"47 1 * * 2-6") MODE="evening" ;;
+              *) MODE="morning" ;;
+            esac
+          fi
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "Modus: $MODE"
 
@@ -75,8 +85,10 @@ jobs:
           if [ -n "$SESSION" ]; then ARGS+=(--session "$SESSION"); fi
           python -m screener.run "${ARGS[@]}" $EXTRA
 
+      # Auch nach einem Fehler in Analyse oder Auswertung: bereits geholte Rohdaten gehen nicht verloren,
+      # und der nächste Termin holt die fehlende Analyse nach.
       - name: Daten committen
-        if: steps.mode.outputs.mode != 'smoke'
+        if: ${{ !cancelled() && steps.mode.outputs.mode != 'smoke' }}
         env:
           MODE: ${{ steps.mode.outputs.mode }}
         run: |

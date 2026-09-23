@@ -63,6 +63,10 @@ def outcome(prices: PriceCache, symbol: str, etf: str, session: str, h: int, sig
             "excess_return": excess, "excess_z": z}
 
 
+OUTCOME_COLS = ["session", "symbol", "is_candidate", "is_elevated", "earnings_in_window", "end_date", "return_stock",
+                "return_etf", "excess_return", "excess_z", "hit"]
+
+
 def evaluate(paths: Paths, settings: dict) -> dict:
     h, hit_sigma, win = int(settings["eval_horizon_days"]), float(settings["eval_hit_sigma"]), int(settings["eval_sigma_window"])
     prices = PriceCache(paths)
@@ -88,7 +92,7 @@ def evaluate(paths: Paths, settings: dict) -> dict:
             rows.append({"session": s, "symbol": r["symbol"], "is_candidate": bool(r["is_candidate"]),
                          "is_elevated": bool(r["is_elevated"]), "earnings_in_window": earn_in, **o,
                          "hit": abs(o["excess_z"]) >= hit_sigma})
-    out = pd.DataFrame(rows)
+    out = pd.DataFrame(rows, columns=OUTCOME_COLS)
     paths.evaluation.mkdir(parents=True, exist_ok=True)
     write_csv(out, paths.evaluation / "outcomes.csv")
 
