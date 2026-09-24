@@ -1,0 +1,21 @@
+{
+  "run": "evening",
+  "status": "OK",
+  "session": "2026-09-23",
+  "started_at": "2026-09-23T23:56:10Z",
+  "finished_at": "2026-09-24T00:05:18Z",
+  "late_run": false,
+  "source": "Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "n_tickers": 101,
+  "options_status_counts": {
+    "OK": 101
+  },
+  "price_unavailable": 0,
+  "request_count": 1241,
+  "errors": [],
+  "settings": {
+    "max_expiry_days": 120,
+    "top_contracts": 10
+  },
+  "note": "Optionsvolumen zählt nur Kontrakte, deren letzter Handel am Handelstag war. Open Interest in dieser Datei ist der Stand zu Beginn des Handelstags."
+}
