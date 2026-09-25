@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T16:01:20Z",
+  "generated_at": "2026-09-25T16:02:27Z",
   "horizon_trading_days": 10,
   "hit_definition": "|Überrendite ggü. Sektor-ETF nach 10 Handelstagen| >= 2.0 Sigma (Sigma aus 60 Tagen vor dem Signal)",
   "groups": {}
