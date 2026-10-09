@@ -1,7 +1,7 @@
 # Optionsaktivität: Analyse für den Handelstag 2026-10-08
 
-Erstellt 2026-10-09T17:38:55Z aus Dateien des Datenagenten. Quelle: Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert).
-Open Interest nach Handelsschluss: **TEILWEISE**. Vollständige Datensätze: 0 von 101. Mit ausreichender Baseline (15 Tage): 0.
+Erstellt 2026-10-09T18:45:01Z aus Dateien des Datenagenten. Quelle: Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert).
+Open Interest nach Handelsschluss: **OK**. Vollständige Datensätze: 0 von 101. Mit ausreichender Baseline (15 Tage): 0.
 
 Dieser Bericht beschreibt Aktivität. Er bewertet sie nicht als bullisch oder bärisch und empfiehlt keinen Trade.
 
@@ -37,7 +37,6 @@ Keine.
 
 101 Ticker unvollständig. Häufigste Gründe:
 * Baseline erst 12 von 15 Handelstagen: 101
-* OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar): 1
 
 ---
 Screener, kein Signal. Ungewöhnliche Aktivität ist ein Grund, sich ein Unternehmen anzusehen, kein Grund, eine Position einzugehen. Daten verzögert und inoffiziell: vor jeder Entscheidung an der Quelle prüfen.

@@ -1,9 +1,9 @@
 {
   "session": "2026-10-08",
-  "generated_at": "2026-10-09T17:38:55Z",
+  "generated_at": "2026-10-09T18:45:01Z",
   "status": "OK",
   "source": "Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert)",
-  "oi_status": "TEILWEISE",
+  "oi_status": "OK",
   "n_tickers": 101,
   "n_complete": 0,
   "n_baseline_ok": 0,
@@ -197,7 +197,7 @@
     },
     {
       "symbol": "GOOGL",
-      "issues": "Baseline erst 12 von 15 Handelstagen | OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
+      "issues": "Baseline erst 12 von 15 Handelstagen"
     },
     {
       "symbol": "GS",
