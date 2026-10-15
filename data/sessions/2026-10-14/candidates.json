@@ -1,0 +1,307 @@
+{
+  "session": "2026-10-14",
+  "generated_at": "2026-10-15T15:50:15Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.15841584158415842,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "USB",
+      "name": "U.S. Bancorp",
+      "sector": "Financials",
+      "option_volume": 12310.0,
+      "baseline_median": 4322.5,
+      "option_volume_ratio": 2.847888953152111,
+      "option_volume_z": 2.318245427877901,
+      "option_volume_pctile": 87.5,
+      "baseline_n": 16,
+      "call_volume": 3843.0,
+      "put_volume": 8467.0,
+      "cp_ratio": 0.4538797685130507,
+      "cp_ratio_30d": 1.4444613604530783,
+      "delta_oi_calls": 513.0,
+      "delta_oi_puts": 3103.0,
+      "top_open_share": 0.5297290670589677,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 56.26,
+        "return_1d": -0.011073991851071718,
+        "price_z": -0.8490217299131912,
+        "sector_etf": "XLF",
+        "sector_return_1d": -0.005472449771876553,
+        "stock_rel_volume_30d": 1.361277523353246
+      },
+      "events": {
+        "next_earnings": "2026-10-15",
+        "days_to_earnings": 1.0,
+        "ex_dividend_date": "UNAVAILABLE",
+        "structural_event": "2026-10-16 Monatlicher Optionsverfall"
+      },
+      "boring_hints_from_code": [
+        "Quartalszahlen am 2026-10-15 (in 1 Tagen)",
+        "2026-10-16 Monatlicher Optionsverfall",
+        "75 % des Top-Volumens verfällt innerhalb von 7 Tagen"
+      ],
+      "top_contracts": [
+        {
+          "contract": "USB261016P00054000",
+          "type": "put",
+          "expiry": "2026-10-16",
+          "strike": 54.0,
+          "volume": 2059.0,
+          "oi_start": 1087.0,
+          "oi_after": 2556.0,
+          "delta_oi": 1469.0,
+          "in_the_money": false,
+          "last_price": 0.19,
+          "implied_vol": 0.5664105859375,
+          "note": ""
+        },
+        {
+          "contract": "USB261016P00052000",
+          "type": "put",
+          "expiry": "2026-10-16",
+          "strike": 52.0,
+          "volume": 1733.0,
+          "oi_start": 55.0,
+          "oi_after": 1689.0,
+          "delta_oi": 1634.0,
+          "in_the_money": false,
+          "last_price": 0.05,
+          "implied_vol": 0.6367223828125,
+          "note": ""
+        },
+        {
+          "contract": "USB261218P00032500",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 32.5,
+          "volume": 825.0,
+          "oi_start": 1042.0,
+          "oi_after": 995.0,
+          "delta_oi": -47.0,
+          "in_the_money": false,
+          "last_price": 0.04,
+          "implied_vol": 0.523442265625,
+          "note": ""
+        },
+        {
+          "contract": "USB261016P00055000",
+          "type": "put",
+          "expiry": "2026-10-16",
+          "strike": 55.0,
+          "volume": 665.0,
+          "oi_start": 506.0,
+          "oi_after": 893.0,
+          "delta_oi": 387.0,
+          "in_the_money": false,
+          "last_price": 0.42,
+          "implied_vol": 0.5537154003906251,
+          "note": ""
+        },
+        {
+          "contract": "USB261120C00060000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 60.0,
+          "volume": 621.0,
+          "oi_start": 1716.0,
+          "oi_after": 1674.0,
+          "delta_oi": -42.0,
+          "in_the_money": false,
+          "last_price": 0.61,
+          "implied_vol": 0.2832102929687499,
+          "note": ""
+        },
+        {
+          "contract": "USB270115P00035000",
+          "type": "put",
+          "expiry": "2027-01-15",
+          "strike": 35.0,
+          "volume": 583.0,
+          "oi_start": 1031.0,
+          "oi_after": 984.0,
+          "delta_oi": -47.0,
+          "in_the_money": false,
+          "last_price": 0.07,
+          "implied_vol": 0.5039112109375,
+          "note": ""
+        },
+        {
+          "contract": "USB261016P00056000",
+          "type": "put",
+          "expiry": "2026-10-16",
+          "strike": 56.0,
+          "volume": 571.0,
+          "oi_start": 563.0,
+          "oi_after": 1018.0,
+          "delta_oi": 455.0,
+          "in_the_money": false,
+          "last_price": 0.77,
+          "implied_vol": 0.5361374511718751,
+          "note": ""
+        },
+        {
+          "contract": "USB261016C00057500",
+          "type": "call",
+          "expiry": "2026-10-16",
+          "strike": 57.5,
+          "volume": 472.0,
+          "oi_start": 276.0,
+          "oi_after": 497.0,
+          "delta_oi": 221.0,
+          "in_the_money": false,
+          "last_price": 0.42,
+          "implied_vol": 0.5302781347656251,
+          "note": ""
+        },
+        {
+          "contract": "USB261016C00059000",
+          "type": "call",
+          "expiry": "2026-10-16",
+          "strike": 59.0,
+          "volume": 346.0,
+          "oi_start": 613.0,
+          "oi_after": 748.0,
+          "delta_oi": 135.0,
+          "in_the_money": false,
+          "last_price": 0.12,
+          "implied_vol": 0.5312546875,
+          "note": ""
+        },
+        {
+          "contract": "USB261016P00053000",
+          "type": "put",
+          "expiry": "2026-10-16",
+          "strike": 53.0,
+          "volume": 282.0,
+          "oi_start": 75.0,
+          "oi_after": 231.0,
+          "delta_oi": 156.0,
+          "in_the_money": false,
+          "last_price": 0.09,
+          "implied_vol": 0.5996133789062501,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-10-15T00:14:01Z",
+        "options_fetched_at": "2026-10-15T00:14:01Z",
+        "options_last_trade_et": "2026-10-14T15:59:46-04:00",
+        "oi_after_fetched_at": "2026-10-15T15:50:13Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "ABBV",
+      "option_volume_z": 5.706942058512199,
+      "option_volume_ratio": 11.41935067449816,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "PFE",
+      "option_volume_z": 5.655354182764427,
+      "option_volume_ratio": 3.4842502980219425,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +3,3)"
+    },
+    {
+      "symbol": "KO",
+      "option_volume_z": 5.242668178919283,
+      "option_volume_ratio": 2.5386337243549826,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +1,9)"
+    },
+    {
+      "symbol": "C",
+      "option_volume_z": 5.236737632812398,
+      "option_volume_ratio": 4.272878310107483,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BAC",
+      "option_volume_z": 4.37787373673391,
+      "option_volume_ratio": 4.276660510612234,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "JNJ",
+      "option_volume_z": 4.027613259686071,
+      "option_volume_ratio": 3.102482809733602,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "UNH",
+      "option_volume_z": 3.944631769740677,
+      "option_volume_ratio": 2.900850020784657,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "ORCL",
+      "option_volume_z": 3.628978472301947,
+      "option_volume_ratio": 2.4984319833416597,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -2,9)"
+    },
+    {
+      "symbol": "BLK",
+      "option_volume_z": 3.498895554192399,
+      "option_volume_ratio": 6.233472304943419,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "AMGN",
+      "option_volume_z": 3.388453892925639,
+      "option_volume_ratio": 2.2930622009569377,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +1,9)"
+    },
+    {
+      "symbol": "CVS",
+      "option_volume_z": 2.7745097646305137,
+      "option_volume_ratio": 2.5088912562484635,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BNY",
+      "option_volume_z": 2.7098776424282556,
+      "option_volume_ratio": 7.8465869106263195,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "ABT",
+      "option_volume_z": 2.6926384559697394,
+      "option_volume_ratio": 3.957532454463118,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "LLY",
+      "option_volume_z": 2.3099495954782276,
+      "option_volume_ratio": 2.0017210144927535,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GEV",
+      "option_volume_z": 2.2722739259536553,
+      "option_volume_ratio": 2.141754022690997,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    }
+  ],
+  "incomplete": []
+}
