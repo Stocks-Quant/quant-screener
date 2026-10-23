@@ -1,0 +1,279 @@
+{
+  "session": "2026-10-22",
+  "generated_at": "2026-10-23T16:00:54Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.1188118811881188,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "GE",
+      "name": "GE Aerospace",
+      "sector": "Industrials",
+      "option_volume": 45765.0,
+      "baseline_median": 8781.0,
+      "option_volume_ratio": 5.211820977109668,
+      "option_volume_z": 3.3962006242813736,
+      "option_volume_pctile": 100.0,
+      "baseline_n": 22,
+      "call_volume": 9465.0,
+      "put_volume": 36300.0,
+      "cp_ratio": 0.26074380165289257,
+      "cp_ratio_30d": 1.7188143345536522,
+      "delta_oi_calls": 4529.0,
+      "delta_oi_puts": 11168.0,
+      "top_open_share": 0.4145544635321663,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 293.54,
+        "return_1d": -0.007908627971461857,
+        "price_z": -0.550923681335275,
+        "sector_etf": "XLI",
+        "sector_return_1d": -0.009387425473901034,
+        "stock_rel_volume_30d": 1.3641844386655515
+      },
+      "events": {
+        "next_earnings": "UNAVAILABLE",
+        "days_to_earnings": "UNAVAILABLE",
+        "ex_dividend_date": "UNAVAILABLE",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [],
+      "top_contracts": [
+        {
+          "contract": "GE270115P00260000",
+          "type": "put",
+          "expiry": "2027-01-15",
+          "strike": 260.0,
+          "volume": 14680.0,
+          "oi_start": 1171.0,
+          "oi_after": 15798.0,
+          "delta_oi": 14627.0,
+          "in_the_money": false,
+          "last_price": 5.54,
+          "implied_vol": 0.3463810479736328,
+          "note": ""
+        },
+        {
+          "contract": "GE270115P00300000",
+          "type": "put",
+          "expiry": "2027-01-15",
+          "strike": 300.0,
+          "volume": 14639.0,
+          "oi_start": 15574.0,
+          "oi_after": 13180.0,
+          "delta_oi": -2394.0,
+          "in_the_money": true,
+          "last_price": 19.86,
+          "implied_vol": 0.30454186676025385,
+          "note": ""
+        },
+        {
+          "contract": "GE261120C00350000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 350.0,
+          "volume": 4076.0,
+          "oi_start": 13180.0,
+          "oi_after": 17086.0,
+          "delta_oi": 3906.0,
+          "in_the_money": false,
+          "last_price": 0.34,
+          "implied_vol": 0.3540103662109374,
+          "note": ""
+        },
+        {
+          "contract": "GE261023P00310000",
+          "type": "put",
+          "expiry": "2026-10-23",
+          "strike": 310.0,
+          "volume": 1032.0,
+          "oi_start": 680.0,
+          "oi_after": 95.0,
+          "delta_oi": -585.0,
+          "in_the_money": true,
+          "last_price": 19.75,
+          "implied_vol": 0.726565234375,
+          "note": ""
+        },
+        {
+          "contract": "GE261023C00300000",
+          "type": "call",
+          "expiry": "2026-10-23",
+          "strike": 300.0,
+          "volume": 569.0,
+          "oi_start": 245.0,
+          "oi_after": 516.0,
+          "delta_oi": 271.0,
+          "in_the_money": false,
+          "last_price": 0.55,
+          "implied_vol": 0.46191944335937507,
+          "note": ""
+        },
+        {
+          "contract": "GE261023P00315000",
+          "type": "put",
+          "expiry": "2026-10-23",
+          "strike": 315.0,
+          "volume": 369.0,
+          "oi_start": 225.0,
+          "oi_after": 3.0,
+          "delta_oi": -222.0,
+          "in_the_money": true,
+          "last_price": 22.44,
+          "implied_vol": 1.0141650854492186,
+          "note": ""
+        },
+        {
+          "contract": "GE261023P00307500",
+          "type": "put",
+          "expiry": "2026-10-23",
+          "strike": 307.5,
+          "volume": 367.0,
+          "oi_start": 238.0,
+          "oi_after": 10.0,
+          "delta_oi": -228.0,
+          "in_the_money": true,
+          "last_price": 17.3,
+          "implied_vol": 0.532231240234375,
+          "note": ""
+        },
+        {
+          "contract": "GE270115C00350000",
+          "type": "call",
+          "expiry": "2027-01-15",
+          "strike": 350.0,
+          "volume": 338.0,
+          "oi_start": 5583.0,
+          "oi_after": 5553.0,
+          "delta_oi": -30.0,
+          "in_the_money": false,
+          "last_price": 3.0,
+          "implied_vol": 0.3265448205566406,
+          "note": ""
+        },
+        {
+          "contract": "GE261023P00312500",
+          "type": "put",
+          "expiry": "2026-10-23",
+          "strike": 312.5,
+          "volume": 335.0,
+          "oi_start": 223.0,
+          "oi_after": 2.0,
+          "delta_oi": -221.0,
+          "in_the_money": true,
+          "last_price": 22.25,
+          "implied_vol": 0.782228740234375,
+          "note": ""
+        },
+        {
+          "contract": "GE261023P00280000",
+          "type": "put",
+          "expiry": "2026-10-23",
+          "strike": 280.0,
+          "volume": 326.0,
+          "oi_start": 584.0,
+          "oi_after": 687.0,
+          "delta_oi": 103.0,
+          "in_the_money": false,
+          "last_price": 0.14,
+          "implied_vol": 0.5195360546875,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-10-23T00:12:11Z",
+        "options_fetched_at": "2026-10-23T00:12:12Z",
+        "options_last_trade_et": "2026-10-22T15:59:57-04:00",
+        "oi_after_fetched_at": "2026-10-23T16:00:52Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "FDX",
+      "option_volume_z": 6.799686034238823,
+      "option_volume_ratio": 5.032617603671529,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +1,4)"
+    },
+    {
+      "symbol": "PG",
+      "option_volume_z": 4.819824165837401,
+      "option_volume_ratio": 11.341634241245137,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "LRCX",
+      "option_volume_z": 4.314057629715919,
+      "option_volume_ratio": 5.828831964360295,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GEV",
+      "option_volume_z": 3.9818735969647223,
+      "option_volume_ratio": 3.3985284180494033,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -4,4)"
+    },
+    {
+      "symbol": "IBM",
+      "option_volume_z": 3.8732730572622525,
+      "option_volume_ratio": 3.1079964960580653,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "LMT",
+      "option_volume_z": 3.5878974923445117,
+      "option_volume_ratio": 3.768409959162166,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "JNJ",
+      "option_volume_z": 3.2196887652214086,
+      "option_volume_ratio": 3.2450326548947785,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +2,1)"
+    },
+    {
+      "symbol": "MRK",
+      "option_volume_z": 2.882317532780911,
+      "option_volume_ratio": 5.400053376034161,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "NFLX",
+      "option_volume_z": 2.716664710906313,
+      "option_volume_ratio": 2.2387063573115467,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "TXN",
+      "option_volume_z": 2.1774041672184814,
+      "option_volume_ratio": 3.4184618698836706,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "UNP",
+      "option_volume_z": 2.129287246715342,
+      "option_volume_ratio": 3.1588845654993514,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    }
+  ],
+  "incomplete": []
+}
