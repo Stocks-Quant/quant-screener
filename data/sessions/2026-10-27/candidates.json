@@ -1,0 +1,246 @@
+{
+  "session": "2026-10-27",
+  "generated_at": "2026-10-28T17:27:45Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.0594059405940594,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "V",
+      "name": "Visa Inc.",
+      "sector": "Financials",
+      "option_volume": 53957.0,
+      "baseline_median": 19758.0,
+      "option_volume_ratio": 2.730893815163478,
+      "option_volume_z": 2.249327522098644,
+      "option_volume_pctile": 100.0,
+      "baseline_n": 25,
+      "call_volume": 27735.0,
+      "put_volume": 26222.0,
+      "cp_ratio": 1.0576996415223858,
+      "cp_ratio_30d": 1.2689872422269257,
+      "delta_oi_calls": 9619.0,
+      "delta_oi_puts": 11945.0,
+      "top_open_share": 0.36203291695705786,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 401.86,
+        "return_1d": -0.0056908245280803404,
+        "price_z": -0.4468686398501894,
+        "sector_etf": "XLF",
+        "sector_return_1d": -0.0024991156126323855,
+        "stock_rel_volume_30d": 1.2804088240610485
+      },
+      "events": {
+        "next_earnings": "2026-10-27",
+        "days_to_earnings": 0.0,
+        "ex_dividend_date": "UNAVAILABLE",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [
+        "Quartalszahlen am 2026-10-27 (in 0 Tagen)",
+        "71 % des Top-Volumens verfällt innerhalb von 7 Tagen"
+      ],
+      "top_contracts": [
+        {
+          "contract": "V270115C00400000",
+          "type": "call",
+          "expiry": "2027-01-15",
+          "strike": 400.0,
+          "volume": 4086.0,
+          "oi_start": 11851.0,
+          "oi_after": 10414.0,
+          "delta_oi": -1437.0,
+          "in_the_money": true,
+          "last_price": 18.26,
+          "implied_vol": 0.24051662811279295,
+          "note": ""
+        },
+        {
+          "contract": "V261030C00420000",
+          "type": "call",
+          "expiry": "2026-10-30",
+          "strike": 420.0,
+          "volume": 2400.0,
+          "oi_start": 416.0,
+          "oi_after": 1858.0,
+          "delta_oi": 1442.0,
+          "in_the_money": false,
+          "last_price": 0.91,
+          "implied_vol": 0.43628493408203123,
+          "note": ""
+        },
+        {
+          "contract": "V261030C00410000",
+          "type": "call",
+          "expiry": "2026-10-30",
+          "strike": 410.0,
+          "volume": 1827.0,
+          "oi_start": 904.0,
+          "oi_after": 1368.0,
+          "delta_oi": 464.0,
+          "in_the_money": false,
+          "last_price": 3.09,
+          "implied_vol": 0.44470770141601557,
+          "note": ""
+        },
+        {
+          "contract": "V261030C00400000",
+          "type": "call",
+          "expiry": "2026-10-30",
+          "strike": 400.0,
+          "volume": 1802.0,
+          "oi_start": 822.0,
+          "oi_after": 1999.0,
+          "delta_oi": 1177.0,
+          "in_the_money": true,
+          "last_price": 6.9,
+          "implied_vol": 0.450200810546875,
+          "note": ""
+        },
+        {
+          "contract": "V261030P00400000",
+          "type": "put",
+          "expiry": "2026-10-30",
+          "strike": 400.0,
+          "volume": 1575.0,
+          "oi_start": 387.0,
+          "oi_after": 1520.0,
+          "delta_oi": 1133.0,
+          "in_the_money": false,
+          "last_price": 5.58,
+          "implied_vol": 0.4578911633300782,
+          "note": ""
+        },
+        {
+          "contract": "V261030P00390000",
+          "type": "put",
+          "expiry": "2026-10-30",
+          "strike": 390.0,
+          "volume": 1464.0,
+          "oi_start": 786.0,
+          "oi_after": 1575.0,
+          "delta_oi": 789.0,
+          "in_the_money": false,
+          "last_price": 2.09,
+          "implied_vol": 0.4539849523925781,
+          "note": ""
+        },
+        {
+          "contract": "V261030P00380000",
+          "type": "put",
+          "expiry": "2026-10-30",
+          "strike": 380.0,
+          "volume": 1443.0,
+          "oi_start": 774.0,
+          "oi_after": 1390.0,
+          "delta_oi": 616.0,
+          "in_the_money": false,
+          "last_price": 0.64,
+          "implied_vol": 0.46191944335937507,
+          "note": ""
+        },
+        {
+          "contract": "V261030C00415000",
+          "type": "call",
+          "expiry": "2026-10-30",
+          "strike": 415.0,
+          "volume": 1385.0,
+          "oi_start": 341.0,
+          "oi_after": 1058.0,
+          "delta_oi": 717.0,
+          "in_the_money": false,
+          "last_price": 1.71,
+          "implied_vol": 0.44043528320312497,
+          "note": ""
+        },
+        {
+          "contract": "V261120P00400000",
+          "type": "put",
+          "expiry": "2026-11-20",
+          "strike": 400.0,
+          "volume": 1373.0,
+          "oi_start": 289.0,
+          "oi_after": 1324.0,
+          "delta_oi": 1035.0,
+          "in_the_money": false,
+          "last_price": 9.2,
+          "implied_vol": 0.2537306072998047,
+          "note": ""
+        },
+        {
+          "contract": "V261030C00425000",
+          "type": "call",
+          "expiry": "2026-10-30",
+          "strike": 425.0,
+          "volume": 1298.0,
+          "oi_start": 314.0,
+          "oi_after": 1131.0,
+          "delta_oi": 817.0,
+          "in_the_money": false,
+          "last_price": 0.5,
+          "implied_vol": 0.4309138940429688,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-10-28T00:51:14Z",
+        "options_fetched_at": "2026-10-28T00:51:15Z",
+        "options_last_trade_et": "2026-10-27T15:59:59-04:00",
+        "oi_after_fetched_at": "2026-10-28T17:27:43Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "FDX",
+      "option_volume_z": 6.592957040166698,
+      "option_volume_ratio": 4.947626841243863,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +2,3)"
+    },
+    {
+      "symbol": "BA",
+      "option_volume_z": 5.073364504786242,
+      "option_volume_ratio": 5.449880108093021,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GILD",
+      "option_volume_z": 4.183541389158031,
+      "option_volume_ratio": 6.4089929165383435,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BKNG",
+      "option_volume_z": 3.905648811578067,
+      "option_volume_ratio": 6.18217754687147,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "UPS",
+      "option_volume_z": 3.401087107194231,
+      "option_volume_ratio": 4.751211498973306,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    }
+  ],
+  "incomplete": []
+}
