@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-10-29T17:38:02Z",
+  "generated_at": "2026-10-30T17:15:52Z",
   "horizon_trading_days": 10,
   "hit_definition": "|Überrendite ggü. Sektor-ETF nach 10 Handelstagen| >= 2.0 Sigma (Sigma aus 60 Tagen vor dem Signal)",
   "groups": {
     "alle_tickertage": {
-      "n": 202,
-      "hits": 12,
-      "hit_rate": 0.0594059405940594,
+      "n": 303,
+      "hits": 20,
+      "hit_rate": 0.066006600660066,
       "ci95": [
-        0.03430546592767539,
-        0.10095193588031676
+        0.04313170370386604,
+        0.09974853157062083
       ],
-      "mean_abs_excess_z": 0.8253529506131377
+      "mean_abs_excess_z": 0.8085028416849238
     },
     "erhoehtes_volumen": {
-      "n": 30,
-      "hits": 1,
-      "hit_rate": 0.03333333333333333,
+      "n": 54,
+      "hits": 2,
+      "hit_rate": 0.037037037037037035,
       "ci95": [
-        0.0059084379948573795,
-        0.16670751396958874
+        0.010216153585413057,
+        0.12535409343403314
       ],
-      "mean_abs_excess_z": 0.8575874640147118
+      "mean_abs_excess_z": 0.815882011534849
     },
     "kandidaten": {
-      "n": 4,
+      "n": 7,
       "hits": 1,
-      "hit_rate": 0.25,
+      "hit_rate": 0.14285714285714285,
       "ci95": [
-        0.045586062644636216,
-        0.6993639475573634
+        0.02567895594897479,
+        0.51313450331903
       ],
-      "mean_abs_excess_z": 1.3308111399491194
+      "mean_abs_excess_z": 1.0145736069589586
     },
     "kandidaten_ohne_quartalszahlen": {
       "n": 1,
@@ -44,16 +44,16 @@
       "mean_abs_excess_z": 2.325725314139201
     },
     "alle_ohne_quartalszahlen": {
-      "n": 117,
-      "hits": 3,
-      "hit_rate": 0.02564102564102564,
+      "n": 166,
+      "hits": 5,
+      "hit_rate": 0.030120481927710843,
       "ci95": [
-        0.008757897045422923,
-        0.07268425532594588
+        0.012932695782301017,
+        0.06856441682144268
       ],
-      "mean_abs_excess_z": 0.6934874827624439
+      "mean_abs_excess_z": 0.668562843764691
     }
   },
   "first_session": "2026-10-13",
-  "last_session": "2026-10-14"
+  "last_session": "2026-10-15"
 }

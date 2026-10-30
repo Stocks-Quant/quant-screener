@@ -1,0 +1,303 @@
+{
+  "session": "2026-10-29",
+  "generated_at": "2026-10-30T17:15:51Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.15841584158415842,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "NFLX",
+      "name": "Netflix",
+      "sector": "Communication Services",
+      "option_volume": 543804.0,
+      "baseline_median": 252809.0,
+      "option_volume_ratio": 2.1510468377312515,
+      "option_volume_z": 2.696569481005997,
+      "option_volume_pctile": 88.88888888888889,
+      "baseline_n": 27,
+      "call_volume": 236050.0,
+      "put_volume": 307754.0,
+      "cp_ratio": 0.7670087147526921,
+      "cp_ratio_30d": 1.6910979561335742,
+      "delta_oi_calls": 72857.0,
+      "delta_oi_puts": 35929.0,
+      "top_open_share": 0.4306292045904234,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 62.05,
+        "return_1d": 0.0009678709454534751,
+        "price_z": 0.04371533937886123,
+        "sector_etf": "XLC",
+        "sector_return_1d": -0.01871242390022887,
+        "stock_rel_volume_30d": 0.9954448961266489
+      },
+      "events": {
+        "next_earnings": "UNAVAILABLE",
+        "days_to_earnings": "UNAVAILABLE",
+        "ex_dividend_date": "UNAVAILABLE",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [],
+      "top_contracts": [
+        {
+          "contract": "NFLX261218P00060000",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 60.0,
+          "volume": 44360.0,
+          "oi_start": 24259.0,
+          "oi_after": 67446.0,
+          "delta_oi": 43187.0,
+          "in_the_money": false,
+          "last_price": 1.94,
+          "implied_vol": 0.32910827148437494,
+          "note": ""
+        },
+        {
+          "contract": "NFLX261218C00064000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 64.0,
+          "volume": 41830.0,
+          "oi_start": 1949.0,
+          "oi_after": 42383.0,
+          "delta_oi": 40434.0,
+          "in_the_money": false,
+          "last_price": 2.3,
+          "implied_vol": 0.3530338134765625,
+          "note": ""
+        },
+        {
+          "contract": "NFLX261030C00062000",
+          "type": "call",
+          "expiry": "2026-10-30",
+          "strike": 62.0,
+          "volume": 30253.0,
+          "oi_start": 5988.0,
+          "oi_after": 8477.0,
+          "delta_oi": 2489.0,
+          "in_the_money": true,
+          "last_price": 0.47,
+          "implied_vol": 0.35156898437499995,
+          "note": ""
+        },
+        {
+          "contract": "NFLX261030C00063000",
+          "type": "call",
+          "expiry": "2026-10-30",
+          "strike": 63.0,
+          "volume": 21951.0,
+          "oi_start": 12974.0,
+          "oi_after": 15074.0,
+          "delta_oi": 2100.0,
+          "in_the_money": false,
+          "last_price": 0.14,
+          "implied_vol": 0.35938140625,
+          "note": ""
+        },
+        {
+          "contract": "NFLX261218P00095000",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 95.0,
+          "volume": 20621.0,
+          "oi_start": 3125.0,
+          "oi_after": 3125.0,
+          "delta_oi": 0.0,
+          "in_the_money": true,
+          "last_price": 32.55,
+          "implied_vol": 0.6123085644531252,
+          "note": ""
+        },
+        {
+          "contract": "NFLX261120P00080000",
+          "type": "put",
+          "expiry": "2026-11-20",
+          "strike": 80.0,
+          "volume": 17714.0,
+          "oi_start": 2755.0,
+          "oi_after": 2747.0,
+          "delta_oi": -8.0,
+          "in_the_money": true,
+          "last_price": 17.6,
+          "implied_vol": 0.6669955175781253,
+          "note": ""
+        },
+        {
+          "contract": "NFLX261106C00063000",
+          "type": "call",
+          "expiry": "2026-11-06",
+          "strike": 63.0,
+          "volume": 14652.0,
+          "oi_start": 4233.0,
+          "oi_after": 9752.0,
+          "delta_oi": 5519.0,
+          "in_the_money": false,
+          "last_price": 0.79,
+          "implied_vol": 0.3266668896484375,
+          "note": ""
+        },
+        {
+          "contract": "NFLX261030P00061000",
+          "type": "put",
+          "expiry": "2026-10-30",
+          "strike": 61.0,
+          "volume": 12518.0,
+          "oi_start": 14769.0,
+          "oi_after": 18905.0,
+          "delta_oi": 4136.0,
+          "in_the_money": false,
+          "last_price": 0.09,
+          "implied_vol": 0.34180345703125,
+          "note": ""
+        },
+        {
+          "contract": "NFLX261030C00064000",
+          "type": "call",
+          "expiry": "2026-10-30",
+          "strike": 64.0,
+          "volume": 11930.0,
+          "oi_start": 11892.0,
+          "oi_after": 11974.0,
+          "delta_oi": 82.0,
+          "in_the_money": false,
+          "last_price": 0.05,
+          "implied_vol": 0.42188078125,
+          "note": ""
+        },
+        {
+          "contract": "NFLX270115P00100000",
+          "type": "put",
+          "expiry": "2027-01-15",
+          "strike": 100.0,
+          "volume": 11601.0,
+          "oi_start": 2167.0,
+          "oi_after": 2166.0,
+          "delta_oi": -1.0,
+          "in_the_money": true,
+          "last_price": 38.05,
+          "implied_vol": 0.7514673291015624,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-10-30T01:26:31Z",
+        "options_fetched_at": "2026-10-30T01:26:32Z",
+        "options_last_trade_et": "2026-10-29T15:59:59-04:00",
+        "oi_after_fetched_at": "2026-10-30T17:15:50Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "NOW",
+      "option_volume_z": 7.429259425442567,
+      "option_volume_ratio": 8.159055549152933,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GOOG",
+      "option_volume_z": 5.76934630313018,
+      "option_volume_ratio": 5.9491426492214865,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "MO",
+      "option_volume_z": 5.148116724427406,
+      "option_volume_ratio": 2.686117209930755,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GOOGL",
+      "option_volume_z": 4.507308924277096,
+      "option_volume_ratio": 4.318050142372714,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "SBUX",
+      "option_volume_z": 4.282959814296325,
+      "option_volume_ratio": 5.59387697912288,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +1,4)"
+    },
+    {
+      "symbol": "FDX",
+      "option_volume_z": 3.7773162298620355,
+      "option_volume_ratio": 3.132596685082873,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "CAT",
+      "option_volume_z": 3.6805569812827104,
+      "option_volume_ratio": 4.209116696352002,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BA",
+      "option_volume_z": 3.2818869097166576,
+      "option_volume_ratio": 3.6089064771047843,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "TXN",
+      "option_volume_z": 3.039356839293131,
+      "option_volume_ratio": 5.002045826513911,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GILD",
+      "option_volume_z": 3.022588357694161,
+      "option_volume_ratio": 3.827533107483831,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +2,3)"
+    },
+    {
+      "symbol": "GD",
+      "option_volume_z": 2.7318481023870422,
+      "option_volume_ratio": 4.961479198767335,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +4,5)"
+    },
+    {
+      "symbol": "AMT",
+      "option_volume_z": 2.3029856917484524,
+      "option_volume_ratio": 3.928016937191249,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "AMGN",
+      "option_volume_z": 2.2587856112350044,
+      "option_volume_ratio": 2.108088413893612,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +1,1)"
+    },
+    {
+      "symbol": "GE",
+      "option_volume_z": 2.136431363418468,
+      "option_volume_ratio": 5.591953045253487,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "LLY",
+      "option_volume_z": 2.1117381726061537,
+      "option_volume_ratio": 2.5376558206220876,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +3,6)"
+    }
+  ],
+  "incomplete": []
+}
