@@ -1,0 +1,229 @@
+{
+  "session": "2026-11-02",
+  "generated_at": "2026-11-03T18:45:15Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.7.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.0297029702970297,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "PFE",
+      "name": "Pfizer",
+      "sector": "Health Care",
+      "option_volume": 139478.0,
+      "baseline_median": 53971.0,
+      "option_volume_ratio": 2.5843137981508586,
+      "option_volume_z": 2.634895598862742,
+      "option_volume_pctile": 93.10344827586206,
+      "baseline_n": 29,
+      "call_volume": 91200.0,
+      "put_volume": 48278.0,
+      "cp_ratio": 1.88905919880691,
+      "cp_ratio_30d": 2.177666293191378,
+      "delta_oi_calls": 27952.0,
+      "delta_oi_puts": 16636.0,
+      "top_open_share": 0.3779001245917096,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 30.670000076293945,
+        "return_1d": 0.004914797387957304,
+        "price_z": 0.36870462392876285,
+        "sector_etf": "XLV",
+        "sector_return_1d": -0.0014604263579968135,
+        "stock_rel_volume_30d": 1.6808571322526797
+      },
+      "events": {
+        "next_earnings": "2026-11-03",
+        "days_to_earnings": 1.0,
+        "ex_dividend_date": "2026-11-06",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [
+        "Quartalszahlen am 2026-11-03 (in 1 Tagen)",
+        "Ex-Dividende am 2026-11-06",
+        "69 % des Top-Volumens verfällt innerhalb von 7 Tagen"
+      ],
+      "top_contracts": [
+        {
+          "contract": "PFE261106C00031000",
+          "type": "call",
+          "expiry": "2026-11-06",
+          "strike": 31.0,
+          "volume": 9750.0,
+          "oi_start": 5231.0,
+          "oi_after": 7968.0,
+          "delta_oi": 2737.0,
+          "in_the_money": false,
+          "last_price": 0.44,
+          "implied_vol": 0.47461462890625,
+          "note": ""
+        },
+        {
+          "contract": "PFE261106C00030500",
+          "type": "call",
+          "expiry": "2026-11-06",
+          "strike": 30.5,
+          "volume": 8093.0,
+          "oi_start": 3661.0,
+          "oi_after": 6085.0,
+          "delta_oi": 2424.0,
+          "in_the_money": true,
+          "last_price": 0.68,
+          "implied_vol": 0.48633326171875,
+          "note": ""
+        },
+        {
+          "contract": "PFE261106P00030000",
+          "type": "put",
+          "expiry": "2026-11-06",
+          "strike": 30.0,
+          "volume": 6988.0,
+          "oi_start": 4269.0,
+          "oi_after": 7067.0,
+          "delta_oi": 2798.0,
+          "in_the_money": false,
+          "last_price": 0.47,
+          "implied_vol": 0.5898478515625001,
+          "note": ""
+        },
+        {
+          "contract": "PFE261106P00028000",
+          "type": "put",
+          "expiry": "2026-11-06",
+          "strike": 28.0,
+          "volume": 6243.0,
+          "oi_start": 827.0,
+          "oi_after": 5609.0,
+          "delta_oi": 4782.0,
+          "in_the_money": false,
+          "last_price": 0.05,
+          "implied_vol": 0.5625043750000001,
+          "note": ""
+        },
+        {
+          "contract": "PFE270115C00032000",
+          "type": "call",
+          "expiry": "2027-01-15",
+          "strike": 32.0,
+          "volume": 5975.0,
+          "oi_start": 30215.0,
+          "oi_after": 30655.0,
+          "delta_oi": 440.0,
+          "in_the_money": false,
+          "last_price": 0.85,
+          "implied_vol": 0.25928475097656256,
+          "note": ""
+        },
+        {
+          "contract": "PFE261106C00032000",
+          "type": "call",
+          "expiry": "2026-11-06",
+          "strike": 32.0,
+          "volume": 5272.0,
+          "oi_start": 891.0,
+          "oi_after": 3436.0,
+          "delta_oi": 2545.0,
+          "in_the_money": false,
+          "last_price": 0.16,
+          "implied_vol": 0.47461462890625,
+          "note": ""
+        },
+        {
+          "contract": "PFE261106C00031500",
+          "type": "call",
+          "expiry": "2026-11-06",
+          "strike": 31.5,
+          "volume": 4628.0,
+          "oi_start": 1090.0,
+          "oi_after": 4023.0,
+          "delta_oi": 2933.0,
+          "in_the_money": false,
+          "last_price": 0.27,
+          "implied_vol": 0.46680220703125,
+          "note": ""
+        },
+        {
+          "contract": "PFE261120C00031000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 31.0,
+          "volume": 4454.0,
+          "oi_start": 14574.0,
+          "oi_after": 12872.0,
+          "delta_oi": -1702.0,
+          "in_the_money": false,
+          "last_price": 0.61,
+          "implied_vol": 0.28711650390624993,
+          "note": ""
+        },
+        {
+          "contract": "PFE261120P00030000",
+          "type": "put",
+          "expiry": "2026-11-20",
+          "strike": 30.0,
+          "volume": 4268.0,
+          "oi_start": 2539.0,
+          "oi_after": 5007.0,
+          "delta_oi": 2468.0,
+          "in_the_money": false,
+          "last_price": 0.68,
+          "implied_vol": 0.39160764648437496,
+          "note": ""
+        },
+        {
+          "contract": "PFE261113C00031500",
+          "type": "call",
+          "expiry": "2026-11-13",
+          "strike": 31.5,
+          "volume": 3723.0,
+          "oi_start": 2302.0,
+          "oi_after": 5322.0,
+          "delta_oi": 3020.0,
+          "in_the_money": false,
+          "last_price": 0.35,
+          "implied_vol": 0.32910827148437494,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-11-03T03:09:59Z",
+        "options_fetched_at": "2026-11-03T03:10:00Z",
+        "options_last_trade_et": "2026-11-02T15:59:58-05:00",
+        "oi_after_fetched_at": "2026-11-03T18:45:13Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "DE",
+      "option_volume_z": 3.524214880925018,
+      "option_volume_ratio": 3.0277486910994766,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "MMM",
+      "option_volume_z": 2.3163638046557202,
+      "option_volume_ratio": 5.46347941567065,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +1,3)"
+    }
+  ],
+  "incomplete": []
+}
