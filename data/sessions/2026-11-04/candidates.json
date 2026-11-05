@@ -1,0 +1,99 @@
+{
+  "session": "2026-11-04",
+  "generated_at": "2026-11-05T19:03:11Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.1188118811881188,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [],
+  "elevated_not_candidates": [
+    {
+      "symbol": "UBER",
+      "option_volume_z": 3.7849108911140967,
+      "option_volume_ratio": 2.378435906869186,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "CVS",
+      "option_volume_z": 3.0689419365396096,
+      "option_volume_ratio": 5.19522121570172,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "HD",
+      "option_volume_z": 2.9092516350077284,
+      "option_volume_ratio": 2.328260543298814,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BKNG",
+      "option_volume_z": 2.8339052245942753,
+      "option_volume_ratio": 3.809420866992832,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "COP",
+      "option_volume_z": 2.628709322959789,
+      "option_volume_ratio": 2.5089146331443595,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -2,5)"
+    },
+    {
+      "symbol": "MMM",
+      "option_volume_z": 2.5556696750711674,
+      "option_volume_ratio": 5.426481084939329,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "QCOM",
+      "option_volume_z": 2.447296444837528,
+      "option_volume_ratio": 2.9183883091719776,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +1,7)"
+    },
+    {
+      "symbol": "CVX",
+      "option_volume_z": 2.232389323252197,
+      "option_volume_ratio": 2.4264619515059986,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -2,2)"
+    },
+    {
+      "symbol": "DIS",
+      "option_volume_z": 2.2272128060333047,
+      "option_volume_ratio": 2.6763956805215976,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "NEE",
+      "option_volume_z": 2.164063903297674,
+      "option_volume_ratio": 2.6572160447109505,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BRK.B",
+      "option_volume_z": 2.1053417080364962,
+      "option_volume_ratio": 2.597092394569266,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "PG",
+      "option_volume_z": 2.040169115184106,
+      "option_volume_ratio": 2.65572096522814,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    }
+  ],
+  "incomplete": []
+}
