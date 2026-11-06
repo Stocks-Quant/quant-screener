@@ -1,0 +1,317 @@
+{
+  "session": "2026-11-05",
+  "generated_at": "2026-11-06T18:30:16Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.1782178217821782,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "DUK",
+      "name": "Duke Energy",
+      "sector": "Utilities",
+      "option_volume": 17248.0,
+      "baseline_median": 2068.5,
+      "option_volume_ratio": 8.338409475465314,
+      "option_volume_z": 4.688496947459824,
+      "option_volume_pctile": 100.0,
+      "baseline_n": 30,
+      "call_volume": 16743.0,
+      "put_volume": 505.0,
+      "cp_ratio": 33.154455445544556,
+      "cp_ratio_30d": 1.8894687312858243,
+      "delta_oi_calls": 14871.0,
+      "delta_oi_puts": 58.0,
+      "top_open_share": 0.9058709949918542,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 130.08,
+        "return_1d": 0.003781184319441966,
+        "price_z": 0.2639129066509896,
+        "sector_etf": "XLU",
+        "sector_return_1d": -0.00710847525826408,
+        "stock_rel_volume_30d": 2.065638211537917
+      },
+      "events": {
+        "next_earnings": "2026-11-05",
+        "days_to_earnings": 0.0,
+        "ex_dividend_date": "2026-11-13",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [
+        "Quartalszahlen am 2026-11-05 (in 0 Tagen)"
+      ],
+      "top_contracts": [
+        {
+          "contract": "DUK261218C00135000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 135.0,
+          "volume": 15104.0,
+          "oi_start": 822.0,
+          "oi_after": 15235.0,
+          "delta_oi": 14413.0,
+          "in_the_money": false,
+          "last_price": 1.21,
+          "implied_vol": 0.17810880493164064,
+          "note": ""
+        },
+        {
+          "contract": "DUK261120C00135000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 135.0,
+          "volume": 381.0,
+          "oi_start": 1080.0,
+          "oi_after": 1264.0,
+          "delta_oi": 184.0,
+          "in_the_money": false,
+          "last_price": 0.4,
+          "implied_vol": 0.18921709228515626,
+          "note": ""
+        },
+        {
+          "contract": "DUK261218C00140000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 140.0,
+          "volume": 312.0,
+          "oi_start": 2616.0,
+          "oi_after": 2791.0,
+          "delta_oi": 175.0,
+          "in_the_money": false,
+          "last_price": 0.4,
+          "implied_vol": 0.18775226318359373,
+          "note": ""
+        },
+        {
+          "contract": "DUK261120C00130000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 130.0,
+          "volume": 149.0,
+          "oi_start": 2868.0,
+          "oi_after": 2883.0,
+          "delta_oi": 15.0,
+          "in_the_money": true,
+          "last_price": 1.95,
+          "implied_vol": 0.2148516015625,
+          "note": ""
+        },
+        {
+          "contract": "DUK261218C00130000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 130.0,
+          "volume": 145.0,
+          "oi_start": 1344.0,
+          "oi_after": 1380.0,
+          "delta_oi": 36.0,
+          "in_the_money": true,
+          "last_price": 3.18,
+          "implied_vol": 0.18872881591796875,
+          "note": ""
+        },
+        {
+          "contract": "DUK270115P00125000",
+          "type": "put",
+          "expiry": "2027-01-15",
+          "strike": 125.0,
+          "volume": 121.0,
+          "oi_start": 727.0,
+          "oi_after": 752.0,
+          "delta_oi": 25.0,
+          "in_the_money": false,
+          "last_price": 2.0,
+          "implied_vol": 0.18274743041992186,
+          "note": ""
+        },
+        {
+          "contract": "DUK270115C00135000",
+          "type": "call",
+          "expiry": "2027-01-15",
+          "strike": 135.0,
+          "volume": 101.0,
+          "oi_start": 2723.0,
+          "oi_after": 2784.0,
+          "delta_oi": 61.0,
+          "in_the_money": false,
+          "last_price": 1.8,
+          "implied_vol": 0.1733481103515625,
+          "note": ""
+        },
+        {
+          "contract": "DUK261218P00125000",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 125.0,
+          "volume": 98.0,
+          "oi_start": 275.0,
+          "oi_after": 300.0,
+          "delta_oi": 25.0,
+          "in_the_money": false,
+          "last_price": 1.4,
+          "implied_vol": 0.21851367431640623,
+          "note": ""
+        },
+        {
+          "contract": "DUK270115C00140000",
+          "type": "call",
+          "expiry": "2027-01-15",
+          "strike": 140.0,
+          "volume": 87.0,
+          "oi_start": 913.0,
+          "oi_after": 930.0,
+          "delta_oi": 17.0,
+          "in_the_money": false,
+          "last_price": 0.75,
+          "implied_vol": 0.18470053588867186,
+          "note": ""
+        },
+        {
+          "contract": "DUK261120C00140000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 140.0,
+          "volume": 75.0,
+          "oi_start": 21.0,
+          "oi_after": 83.0,
+          "delta_oi": 62.0,
+          "in_the_money": false,
+          "last_price": 0.15,
+          "implied_vol": 0.243171630859375,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-11-06T01:50:17Z",
+        "options_fetched_at": "2026-11-06T01:50:17Z",
+        "options_last_trade_et": "2026-11-05T15:58:57-05:00",
+        "oi_after_fetched_at": "2026-11-06T18:30:15Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "PFE",
+      "option_volume_z": 4.937001557105182,
+      "option_volume_ratio": 11.614522070412768,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "QCOM",
+      "option_volume_z": 3.3002923482730857,
+      "option_volume_ratio": 4.239022340500035,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "MU",
+      "option_volume_z": 3.231572121193595,
+      "option_volume_ratio": 2.5371983832390277,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "NVDA",
+      "option_volume_z": 2.976180743851118,
+      "option_volume_ratio": 2.9026855845314774,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "CSCO",
+      "option_volume_z": 2.7578791038351635,
+      "option_volume_ratio": 2.182530329289428,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -3,7)"
+    },
+    {
+      "symbol": "C",
+      "option_volume_z": 2.6557376543426776,
+      "option_volume_ratio": 2.8545920916752725,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "SNDK",
+      "option_volume_z": 2.6379654803297687,
+      "option_volume_ratio": 2.741582855819117,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "LRCX",
+      "option_volume_z": 2.5199961651312264,
+      "option_volume_ratio": 3.3904145447622676,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "DE",
+      "option_volume_z": 2.505824369165806,
+      "option_volume_ratio": 2.063717746182201,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "PANW",
+      "option_volume_z": 2.394592362080578,
+      "option_volume_ratio": 2.071845291608485,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -2,6)"
+    },
+    {
+      "symbol": "TSLA",
+      "option_volume_z": 2.3767964933396386,
+      "option_volume_ratio": 2.110476975706855,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BAC",
+      "option_volume_z": 2.291437056122396,
+      "option_volume_ratio": 2.2613653906487325,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GS",
+      "option_volume_z": 2.267278821100794,
+      "option_volume_ratio": 2.811619043323335,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BA",
+      "option_volume_z": 2.2449091367695377,
+      "option_volume_ratio": 2.3367433703565923,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GILD",
+      "option_volume_z": 2.179072056769368,
+      "option_volume_ratio": 3.233011069076643,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -1,9)"
+    },
+    {
+      "symbol": "CAT",
+      "option_volume_z": 2.1460485076674414,
+      "option_volume_ratio": 2.3266538567115016,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GEV",
+      "option_volume_z": 2.0933400430988938,
+      "option_volume_ratio": 2.551690379845973,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    }
+  ],
+  "incomplete": []
+}
