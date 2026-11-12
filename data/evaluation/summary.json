@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-11-11T18:58:32Z",
+  "generated_at": "2026-11-12T19:13:09Z",
   "horizon_trading_days": 10,
   "hit_definition": "|Überrendite ggü. Sektor-ETF nach 10 Handelstagen| >= 2.0 Sigma (Sigma aus 60 Tagen vor dem Signal)",
   "groups": {
     "alle_tickertage": {
-      "n": 1111,
-      "hits": 117,
-      "hit_rate": 0.10531053105310531,
+      "n": 1212,
+      "hits": 128,
+      "hit_rate": 0.10561056105610561,
       "ci95": [
-        0.0886007033737232,
-        0.12474045648252904
+        0.0895361413397727,
+        0.12417722395386424
       ],
-      "mean_abs_excess_z": 0.9260484560452389
+      "mean_abs_excess_z": 0.934061605367621
     },
     "erhoehtes_volumen": {
-      "n": 131,
-      "hits": 12,
-      "hit_rate": 0.0916030534351145,
+      "n": 136,
+      "hits": 13,
+      "hit_rate": 0.09558823529411764,
       "ci95": [
-        0.05317759663921357,
-        0.1532987430067117
+        0.05671456924369832,
+        0.15668115849397052
       ],
-      "mean_abs_excess_z": 0.925200501185601
+      "mean_abs_excess_z": 0.9283143929749279
     },
     "kandidaten": {
-      "n": 36,
+      "n": 39,
       "hits": 4,
-      "hit_rate": 0.1111111111111111,
+      "hit_rate": 0.10256410256410256,
       "ci95": [
-        0.04406568908741834,
-        0.2531512901503632
+        0.04061265558286986,
+        0.2357915870224483
       ],
-      "mean_abs_excess_z": 0.9533010481941493
+      "mean_abs_excess_z": 0.9468020626475877
     },
     "kandidaten_ohne_quartalszahlen": {
       "n": 7,
@@ -44,16 +44,16 @@
       "mean_abs_excess_z": 1.2983375351493558
     },
     "alle_ohne_quartalszahlen": {
-      "n": 561,
-      "hits": 31,
-      "hit_rate": 0.05525846702317291,
+      "n": 622,
+      "hits": 37,
+      "hit_rate": 0.0594855305466238,
       "ci95": [
-        0.03919907015715671,
-        0.0773674150309031
+        0.04346172910889948,
+        0.08091734700237213
       ],
-      "mean_abs_excess_z": 0.7805934692083292
+      "mean_abs_excess_z": 0.797627846974551
     }
   },
   "first_session": "2026-10-13",
-  "last_session": "2026-10-27"
+  "last_session": "2026-10-28"
 }
