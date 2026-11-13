@@ -1,0 +1,433 @@
+{
+  "session": "2026-11-12",
+  "generated_at": "2026-11-13T18:50:29Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.06930693069306931,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "CSCO",
+      "name": "Cisco",
+      "sector": "Information Technology",
+      "option_volume": 161158.0,
+      "baseline_median": 31435.5,
+      "option_volume_ratio": 5.126624357812028,
+      "option_volume_z": 4.154297747000458,
+      "option_volume_pctile": 100.0,
+      "baseline_n": 30,
+      "call_volume": 81131.0,
+      "put_volume": 80027.0,
+      "cp_ratio": 1.0137953440713758,
+      "cp_ratio_30d": 1.7668063996031254,
+      "delta_oi_calls": 30296.0,
+      "delta_oi_puts": 53070.0,
+      "top_open_share": 0.5971354122315513,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 102.01,
+        "return_1d": 0.012405695089997115,
+        "price_z": 0.43560399330816274,
+        "sector_etf": "XLK",
+        "sector_return_1d": -0.003383807113364501,
+        "stock_rel_volume_30d": 1.42028785191414
+      },
+      "events": {
+        "next_earnings": "2026-11-12",
+        "days_to_earnings": 0.0,
+        "ex_dividend_date": "UNAVAILABLE",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [
+        "Quartalszahlen am 2026-11-12 (in 0 Tagen)"
+      ],
+      "top_contracts": [
+        {
+          "contract": "CSCO261218P00090000",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 90.0,
+          "volume": 12974.0,
+          "oi_start": 2980.0,
+          "oi_after": 15197.0,
+          "delta_oi": 12217.0,
+          "in_the_money": false,
+          "last_price": 1.67,
+          "implied_vol": 0.4892629199218751,
+          "note": ""
+        },
+        {
+          "contract": "CSCO261120C00105000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 105.0,
+          "volume": 7013.0,
+          "oi_start": 10534.0,
+          "oi_after": 9929.0,
+          "delta_oi": -605.0,
+          "in_the_money": false,
+          "last_price": 3.5,
+          "implied_vol": 0.8063984204101562,
+          "note": ""
+        },
+        {
+          "contract": "CSCO261120P00090000",
+          "type": "put",
+          "expiry": "2026-11-20",
+          "strike": 90.0,
+          "volume": 6924.0,
+          "oi_start": 2111.0,
+          "oi_after": 7471.0,
+          "delta_oi": 5360.0,
+          "in_the_money": false,
+          "last_price": 0.87,
+          "implied_vol": 0.7939473730468749,
+          "note": ""
+        },
+        {
+          "contract": "CSCO270115P00092500",
+          "type": "put",
+          "expiry": "2027-01-15",
+          "strike": 92.5,
+          "volume": 5870.0,
+          "oi_start": 3730.0,
+          "oi_after": 8996.0,
+          "delta_oi": 5266.0,
+          "in_the_money": false,
+          "last_price": 2.97,
+          "implied_vol": 0.4211483666992188,
+          "note": ""
+        },
+        {
+          "contract": "CSCO261120C00115000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 115.0,
+          "volume": 5089.0,
+          "oi_start": 7269.0,
+          "oi_after": 9240.0,
+          "delta_oi": 1971.0,
+          "in_the_money": false,
+          "last_price": 0.91,
+          "implied_vol": 0.7475611181640626,
+          "note": ""
+        },
+        {
+          "contract": "CSCO261120C00120000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 120.0,
+          "volume": 4772.0,
+          "oi_start": 6954.0,
+          "oi_after": 8796.0,
+          "delta_oi": 1842.0,
+          "in_the_money": false,
+          "last_price": 0.44,
+          "implied_vol": 0.7666038964843751,
+          "note": ""
+        },
+        {
+          "contract": "CSCO261113P00090000",
+          "type": "put",
+          "expiry": "2026-11-13",
+          "strike": 90.0,
+          "volume": 4458.0,
+          "oi_start": 835.0,
+          "oi_after": 2744.0,
+          "delta_oi": 1909.0,
+          "in_the_money": false,
+          "last_price": 0.6,
+          "implied_vol": 2.02344244140625,
+          "note": ""
+        },
+        {
+          "contract": "CSCO261113C00110000",
+          "type": "call",
+          "expiry": "2026-11-13",
+          "strike": 110.0,
+          "volume": 3972.0,
+          "oi_start": 1058.0,
+          "oi_after": 2708.0,
+          "delta_oi": 1650.0,
+          "in_the_money": false,
+          "last_price": 1.5,
+          "implied_vol": 1.9882813085937499,
+          "note": ""
+        },
+        {
+          "contract": "CSCO261113P00084000",
+          "type": "put",
+          "expiry": "2026-11-13",
+          "strike": 84.0,
+          "volume": 3862.0,
+          "oi_start": 848.0,
+          "oi_after": 4461.0,
+          "delta_oi": 3613.0,
+          "in_the_money": false,
+          "last_price": 0.12,
+          "implied_vol": 1.8281258593749998,
+          "note": ""
+        },
+        {
+          "contract": "CSCO261113P00085000",
+          "type": "put",
+          "expiry": "2026-11-13",
+          "strike": 85.0,
+          "volume": 3783.0,
+          "oi_start": 1610.0,
+          "oi_after": 3449.0,
+          "delta_oi": 1839.0,
+          "in_the_money": false,
+          "last_price": 0.14,
+          "implied_vol": 1.8515632421875,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-11-13T02:09:30Z",
+        "options_fetched_at": "2026-11-13T02:09:31Z",
+        "options_last_trade_et": "2026-11-12T15:59:59-05:00",
+        "oi_after_fetched_at": "2026-11-13T18:50:27Z"
+      }
+    },
+    {
+      "rank": 2,
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "sector": "Information Technology",
+      "option_volume": 93604.0,
+      "baseline_median": 31762.0,
+      "option_volume_ratio": 2.9470436370505637,
+      "option_volume_z": 3.101420011758162,
+      "option_volume_pctile": 100.0,
+      "baseline_n": 30,
+      "call_volume": 48846.0,
+      "put_volume": 44758.0,
+      "cp_ratio": 1.0913356271504535,
+      "cp_ratio_30d": 0.9638712755765797,
+      "delta_oi_calls": 15218.0,
+      "delta_oi_puts": 17334.0,
+      "top_open_share": 0.32094594594594594,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 380.95,
+        "return_1d": -0.03576487560116148,
+        "price_z": -0.6364772647522209,
+        "sector_etf": "XLK",
+        "sector_return_1d": -0.003383807113364501,
+        "stock_rel_volume_30d": 1.1608492266233963
+      },
+      "events": {
+        "next_earnings": "2026-11-12",
+        "days_to_earnings": 0.0,
+        "ex_dividend_date": "2026-11-19",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [
+        "Quartalszahlen am 2026-11-12 (in 0 Tagen)",
+        "82 % des Top-Volumens verfällt innerhalb von 7 Tagen"
+      ],
+      "top_contracts": [
+        {
+          "contract": "AMAT261113C00410000",
+          "type": "call",
+          "expiry": "2026-11-13",
+          "strike": 410.0,
+          "volume": 4153.0,
+          "oi_start": 820.0,
+          "oi_after": 1500.0,
+          "delta_oi": 680.0,
+          "in_the_money": false,
+          "last_price": 3.92,
+          "implied_vol": 1.6723649194335937,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261113C00450000",
+          "type": "call",
+          "expiry": "2026-11-13",
+          "strike": 450.0,
+          "volume": 2948.0,
+          "oi_start": 2176.0,
+          "oi_after": 2419.0,
+          "delta_oi": 243.0,
+          "in_the_money": false,
+          "last_price": 0.39,
+          "implied_vol": 1.6669938525390626,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261113P00330000",
+          "type": "put",
+          "expiry": "2026-11-13",
+          "strike": 330.0,
+          "volume": 2807.0,
+          "oi_start": 370.0,
+          "oi_after": 2262.0,
+          "delta_oi": 1892.0,
+          "in_the_money": false,
+          "last_price": 0.62,
+          "implied_vol": 1.669923525390625,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261113P00320000",
+          "type": "put",
+          "expiry": "2026-11-13",
+          "strike": 320.0,
+          "volume": 2710.0,
+          "oi_start": 431.0,
+          "oi_after": 2472.0,
+          "delta_oi": 2041.0,
+          "in_the_money": false,
+          "last_price": 0.3,
+          "implied_vol": 1.7285169824218751,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261120P00370000",
+          "type": "put",
+          "expiry": "2026-11-20",
+          "strike": 370.0,
+          "volume": 2329.0,
+          "oi_start": 2659.0,
+          "oi_after": 3351.0,
+          "delta_oi": 692.0,
+          "in_the_money": false,
+          "last_price": 14.35,
+          "implied_vol": 0.8667005517578125,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261113P00350000",
+          "type": "put",
+          "expiry": "2026-11-13",
+          "strike": 350.0,
+          "volume": 1850.0,
+          "oi_start": 583.0,
+          "oi_after": 1147.0,
+          "delta_oi": 564.0,
+          "in_the_money": false,
+          "last_price": 2.74,
+          "implied_vol": 1.6508806518554686,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261120C00400000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 400.0,
+          "volume": 1744.0,
+          "oi_start": 1935.0,
+          "oi_after": 2082.0,
+          "delta_oi": 147.0,
+          "in_the_money": false,
+          "last_price": 12.2,
+          "implied_vol": 0.8795178063964844,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261113C00420000",
+          "type": "call",
+          "expiry": "2026-11-13",
+          "strike": 420.0,
+          "volume": 1632.0,
+          "oi_start": 836.0,
+          "oi_after": 1276.0,
+          "delta_oi": 440.0,
+          "in_the_money": false,
+          "last_price": 2.31,
+          "implied_vol": 1.6709000830078127,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261113P00365000",
+          "type": "put",
+          "expiry": "2026-11-13",
+          "strike": 365.0,
+          "volume": 1475.0,
+          "oi_start": 2014.0,
+          "oi_after": 2166.0,
+          "delta_oi": 152.0,
+          "in_the_money": false,
+          "last_price": 6.6,
+          "implied_vol": 1.6586931127929687,
+          "note": ""
+        },
+        {
+          "contract": "AMAT261113C00400000",
+          "type": "call",
+          "expiry": "2026-11-13",
+          "strike": 400.0,
+          "volume": 1440.0,
+          "oi_start": 721.0,
+          "oi_after": 1280.0,
+          "delta_oi": 559.0,
+          "in_the_money": false,
+          "last_price": 6.35,
+          "implied_vol": 1.6982436962890626,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-11-13T02:07:41Z",
+        "options_fetched_at": "2026-11-13T02:07:41Z",
+        "options_last_trade_et": "2026-11-12T15:59:58-05:00",
+        "oi_after_fetched_at": "2026-11-13T18:50:27Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "DUK",
+      "option_volume_z": 5.65690816282227,
+      "option_volume_ratio": 13.695704925988837,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "SBUX",
+      "option_volume_z": 5.134140438240807,
+      "option_volume_ratio": 9.198723116112598,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "NVDA",
+      "option_volume_z": 3.4624781610536766,
+      "option_volume_ratio": 4.075985678006053,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "MMM",
+      "option_volume_z": 3.2201548095068167,
+      "option_volume_ratio": 6.335542378793163,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BA",
+      "option_volume_z": 2.467082603191311,
+      "option_volume_ratio": 2.5752490207871843,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    }
+  ],
+  "incomplete": []
+}
