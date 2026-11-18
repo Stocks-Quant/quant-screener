@@ -1,0 +1,57 @@
+{
+  "session": "2026-11-17",
+  "generated_at": "2026-11-18T19:40:12Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.04950495049504951,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [],
+  "elevated_not_candidates": [
+    {
+      "symbol": "CRM",
+      "option_volume_z": 4.141066804747077,
+      "option_volume_ratio": 4.111060391655635,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "CVX",
+      "option_volume_z": 3.7053691902016963,
+      "option_volume_ratio": 5.606637714649986,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "DIS",
+      "option_volume_z": 3.2422841832627154,
+      "option_volume_ratio": 4.215989294991211,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "HD",
+      "option_volume_z": 2.7078511184280325,
+      "option_volume_ratio": 3.1325486674577467,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "LOW",
+      "option_volume_z": 2.441723885603917,
+      "option_volume_ratio": 4.330606414751331,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    }
+  ],
+  "incomplete": []
+}
