@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-18T19:40:13Z",
+  "generated_at": "2026-11-19T19:43:51Z",
   "horizon_trading_days": 10,
   "hit_definition": "|Überrendite ggü. Sektor-ETF nach 10 Handelstagen| >= 2.0 Sigma (Sigma aus 60 Tagen vor dem Signal)",
   "groups": {
     "alle_tickertage": {
-      "n": 1616,
-      "hits": 155,
-      "hit_rate": 0.09591584158415842,
+      "n": 1717,
+      "hits": 162,
+      "hit_rate": 0.09435061153174142,
       "ci95": [
-        0.08250151047154757,
-        0.11124681652536374
+        0.08141511534063677,
+        0.10909724791232041
       ],
-      "mean_abs_excess_z": 0.8935408319269978
+      "mean_abs_excess_z": 0.8813658393251482
     },
     "erhoehtes_volumen": {
-      "n": 165,
+      "n": 177,
       "hits": 15,
-      "hit_rate": 0.09090909090909091,
+      "hit_rate": 0.0847457627118644,
       "ci95": [
-        0.05586585661801881,
-        0.1445681596433765
+        0.052027874520308236,
+        0.1351060592648385
       ],
-      "mean_abs_excess_z": 0.8812642372707256
+      "mean_abs_excess_z": 0.8740069509694873
     },
     "kandidaten": {
       "n": 45,
@@ -44,16 +44,16 @@
       "mean_abs_excess_z": 1.1999217758938348
     },
     "alle_ohne_quartalszahlen": {
-      "n": 931,
-      "hits": 55,
-      "hit_rate": 0.05907626208378088,
+      "n": 1016,
+      "hits": 61,
+      "hit_rate": 0.060039370078740155,
       "ci95": [
-        0.04566625330318959,
-        0.07611009896868193
+        0.04702258401065906,
+        0.07637069588692502
       ],
-      "mean_abs_excess_z": 0.7745478331345467
+      "mean_abs_excess_z": 0.7664285964025854
     }
   },
   "first_session": "2026-10-13",
-  "last_session": "2026-11-03"
+  "last_session": "2026-11-04"
 }
