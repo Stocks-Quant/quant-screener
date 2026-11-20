@@ -1,0 +1,277 @@
+{
+  "session": "2026-11-19",
+  "generated_at": "2026-11-20T19:22:11Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.10891089108910891,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "INTU",
+      "name": "Intuit",
+      "sector": "Information Technology",
+      "option_volume": 30756.0,
+      "baseline_median": 6427.0,
+      "option_volume_ratio": 4.785436440018671,
+      "option_volume_z": 3.941952191111536,
+      "option_volume_pctile": 100.0,
+      "baseline_n": 30,
+      "call_volume": 14709.0,
+      "put_volume": 16047.0,
+      "cp_ratio": 0.9166199289586838,
+      "cp_ratio_30d": 1.2658232984691549,
+      "delta_oi_calls": 7828.0,
+      "delta_oi_puts": 7654.0,
+      "top_open_share": 0.5866313360116249,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 310.0199890136719,
+        "return_1d": -0.010279661987902089,
+        "price_z": -0.34808615468147625,
+        "sector_etf": "XLK",
+        "sector_return_1d": -0.019046426736387012,
+        "stock_rel_volume_30d": 1.460666078952113
+      },
+      "events": {
+        "next_earnings": "2026-11-19",
+        "days_to_earnings": 0.0,
+        "ex_dividend_date": "UNAVAILABLE",
+        "structural_event": "2026-11-20 Monatlicher Optionsverfall"
+      },
+      "boring_hints_from_code": [
+        "Quartalszahlen am 2026-11-19 (in 0 Tagen)",
+        "2026-11-20 Monatlicher Optionsverfall",
+        "69 % des Top-Volumens verfällt innerhalb von 7 Tagen"
+      ],
+      "top_contracts": [
+        {
+          "contract": "INTU261120C00360000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 360.0,
+          "volume": 2125.0,
+          "oi_start": 2381.0,
+          "oi_after": 3308.0,
+          "delta_oi": 927.0,
+          "in_the_money": false,
+          "last_price": 1.2,
+          "implied_vol": 1.9882813085937499,
+          "note": ""
+        },
+        {
+          "contract": "INTU261120P00300000",
+          "type": "put",
+          "expiry": "2026-11-20",
+          "strike": 300.0,
+          "volume": 1676.0,
+          "oi_start": 414.0,
+          "oi_after": 1423.0,
+          "delta_oi": 1009.0,
+          "in_the_money": false,
+          "last_price": 8.72,
+          "implied_vol": 2.1162156469726563,
+          "note": ""
+        },
+        {
+          "contract": "INTU261120P00250000",
+          "type": "put",
+          "expiry": "2026-11-20",
+          "strike": 250.0,
+          "volume": 1322.0,
+          "oi_start": 354.0,
+          "oi_after": 1234.0,
+          "delta_oi": 880.0,
+          "in_the_money": false,
+          "last_price": 0.42,
+          "implied_vol": 2.2402387744140624,
+          "note": ""
+        },
+        {
+          "contract": "INTU261127C00360000",
+          "type": "call",
+          "expiry": "2026-11-27",
+          "strike": 360.0,
+          "volume": 1173.0,
+          "oi_start": 55.0,
+          "oi_after": 773.0,
+          "delta_oi": 718.0,
+          "in_the_money": false,
+          "last_price": 2.1,
+          "implied_vol": 0.8510757080078125,
+          "note": ""
+        },
+        {
+          "contract": "INTU261120C00340000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 340.0,
+          "volume": 1069.0,
+          "oi_start": 320.0,
+          "oi_after": 974.0,
+          "delta_oi": 654.0,
+          "in_the_money": false,
+          "last_price": 3.65,
+          "implied_vol": 2.026860401611328,
+          "note": ""
+        },
+        {
+          "contract": "INTU261120C00350000",
+          "type": "call",
+          "expiry": "2026-11-20",
+          "strike": 350.0,
+          "volume": 957.0,
+          "oi_start": 3016.0,
+          "oi_after": 3246.0,
+          "delta_oi": 230.0,
+          "in_the_money": false,
+          "last_price": 1.65,
+          "implied_vol": 1.970703271484375,
+          "note": ""
+        },
+        {
+          "contract": "INTU261120P00305000",
+          "type": "put",
+          "expiry": "2026-11-20",
+          "strike": 305.0,
+          "volume": 884.0,
+          "oi_start": 79.0,
+          "oi_after": 690.0,
+          "delta_oi": 611.0,
+          "in_the_money": false,
+          "last_price": 11.25,
+          "implied_vol": 2.058110323486328,
+          "note": ""
+        },
+        {
+          "contract": "INTU261218P00260000",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 260.0,
+          "volume": 875.0,
+          "oi_start": 494.0,
+          "oi_after": 946.0,
+          "delta_oi": 452.0,
+          "in_the_money": false,
+          "last_price": 4.7,
+          "implied_vol": 0.6668734484863283,
+          "note": ""
+        },
+        {
+          "contract": "INTU270115P00290000",
+          "type": "put",
+          "expiry": "2027-01-15",
+          "strike": 290.0,
+          "volume": 815.0,
+          "oi_start": 235.0,
+          "oi_after": 958.0,
+          "delta_oi": 723.0,
+          "in_the_money": false,
+          "last_price": 15.62,
+          "implied_vol": 0.5139819110107422,
+          "note": ""
+        },
+        {
+          "contract": "INTU270115P00220000",
+          "type": "put",
+          "expiry": "2027-01-15",
+          "strike": 220.0,
+          "volume": 803.0,
+          "oi_start": 852.0,
+          "oi_after": 1511.0,
+          "delta_oi": 659.0,
+          "in_the_money": false,
+          "last_price": 2.3,
+          "implied_vol": 0.6112099426269533,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-11-20T02:39:25Z",
+        "options_fetched_at": "2026-11-20T02:39:25Z",
+        "options_last_trade_et": "2026-11-19T15:59:58-05:00",
+        "oi_after_fetched_at": "2026-11-20T19:22:09Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "UNP",
+      "option_volume_z": 6.3714641928014855,
+      "option_volume_ratio": 9.372108393919365,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -1,9)"
+    },
+    {
+      "symbol": "AMGN",
+      "option_volume_z": 6.234372002395578,
+      "option_volume_ratio": 9.972492697176241,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "PANW",
+      "option_volume_z": 4.9582351100907545,
+      "option_volume_ratio": 6.137776419035973,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "UNH",
+      "option_volume_z": 4.376741742540155,
+      "option_volume_ratio": 4.813318287163433,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "AMD",
+      "option_volume_z": 2.926401839655337,
+      "option_volume_ratio": 2.5919809026010023,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "BA",
+      "option_volume_z": 2.6170852181989637,
+      "option_volume_ratio": 3.4495402405114604,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "MRK",
+      "option_volume_z": 2.5394139294981173,
+      "option_volume_ratio": 3.190701950981237,
+      "reason": "OI-Veränderung: überwiegend geschlossen"
+    },
+    {
+      "symbol": "KO",
+      "option_volume_z": 2.428724506364603,
+      "option_volume_ratio": 2.7107520086666064,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "GOOG",
+      "option_volume_z": 2.265747557536273,
+      "option_volume_ratio": 2.2096382096382094,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "CRM",
+      "option_volume_z": 2.259909258443505,
+      "option_volume_ratio": 2.4567489843429042,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    }
+  ],
+  "incomplete": []
+}
