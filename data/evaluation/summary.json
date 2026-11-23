@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-20T19:22:12Z",
+  "generated_at": "2026-11-23T23:01:20Z",
   "horizon_trading_days": 10,
   "hit_definition": "|Überrendite ggü. Sektor-ETF nach 10 Handelstagen| >= 2.0 Sigma (Sigma aus 60 Tagen vor dem Signal)",
   "groups": {
     "alle_tickertage": {
-      "n": 1818,
-      "hits": 167,
-      "hit_rate": 0.09185918591859187,
+      "n": 1919,
+      "hits": 170,
+      "hit_rate": 0.08858780614903596,
       "ci95": [
-        0.07942900802201573,
-        0.10601060429115135
+        0.07668245697535246,
+        0.10213705681091052
       ],
-      "mean_abs_excess_z": 0.8752684172063553
+      "mean_abs_excess_z": 0.8682450204419975
     },
     "erhoehtes_volumen": {
       "n": 195,
@@ -44,16 +44,16 @@
       "mean_abs_excess_z": 1.1999217758938348
     },
     "alle_ohne_quartalszahlen": {
-      "n": 1104,
-      "hits": 65,
-      "hit_rate": 0.058876811594202896,
+      "n": 1195,
+      "hits": 67,
+      "hit_rate": 0.05606694560669456,
       "ci95": [
-        0.046460748185137235,
-        0.07435219113759627
+        0.04438938415356736,
+        0.07058960890106138
       ],
-      "mean_abs_excess_z": 0.7648635025335502
+      "mean_abs_excess_z": 0.7578372767108137
     }
   },
   "first_session": "2026-10-13",
-  "last_session": "2026-11-05"
+  "last_session": "2026-11-06"
 }
