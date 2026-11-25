@@ -1,0 +1,443 @@
+{
+  "session": "2026-11-24",
+  "generated_at": "2026-11-25T20:45:14Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "OK",
+  "n_tickers": 101,
+  "n_complete": 101,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.0891089108910891,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "TMUS",
+      "name": "T-Mobile US",
+      "sector": "Communication Services",
+      "option_volume": 22035.0,
+      "baseline_median": 6379.5,
+      "option_volume_ratio": 3.454032447683988,
+      "option_volume_z": 2.3436850046022313,
+      "option_volume_pctile": 100.0,
+      "baseline_n": 30,
+      "call_volume": 10670.0,
+      "put_volume": 11365.0,
+      "cp_ratio": 0.9388473383194017,
+      "cp_ratio_30d": 1.2088008398262562,
+      "delta_oi_calls": -458.0,
+      "delta_oi_puts": 10474.0,
+      "top_open_share": 0.5893123138033763,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 167.3000030517578,
+        "return_1d": 0.0056504113846929105,
+        "price_z": 0.25458349588272644,
+        "sector_etf": "XLC",
+        "sector_return_1d": 0.00820461859691446,
+        "stock_rel_volume_30d": 0.9872501300590236
+      },
+      "events": {
+        "next_earnings": "UNAVAILABLE",
+        "days_to_earnings": "UNAVAILABLE",
+        "ex_dividend_date": "2026-11-25",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [
+        "Ex-Dividende am 2026-11-25",
+        "70 % des Top-Volumens verfällt innerhalb von 7 Tagen"
+      ],
+      "top_contracts": [
+        {
+          "contract": "TMUS261127P00220000",
+          "type": "put",
+          "expiry": "2026-11-27",
+          "strike": 220.0,
+          "volume": 10000.0,
+          "oi_start": 0.0,
+          "oi_after": 10000.0,
+          "delta_oi": 10000.0,
+          "in_the_money": true,
+          "last_price": 51.6,
+          "implied_vol": 2.025395561523437,
+          "note": ""
+        },
+        {
+          "contract": "TMUS261218C00110000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 110.0,
+          "volume": 1205.0,
+          "oi_start": 230.0,
+          "oi_after": 0.0,
+          "delta_oi": -230.0,
+          "in_the_money": true,
+          "last_price": 58.31,
+          "implied_vol": 0.6601596484375001,
+          "note": ""
+        },
+        {
+          "contract": "TMUS261218C00145000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 145.0,
+          "volume": 1050.0,
+          "oi_start": 348.0,
+          "oi_after": 4.0,
+          "delta_oi": -344.0,
+          "in_the_money": true,
+          "last_price": 23.4,
+          "implied_vol": 0.562626444091797,
+          "note": ""
+        },
+        {
+          "contract": "TMUS261127C00160000",
+          "type": "call",
+          "expiry": "2026-11-27",
+          "strike": 160.0,
+          "volume": 678.0,
+          "oi_start": 122.0,
+          "oi_after": 1.0,
+          "delta_oi": -121.0,
+          "in_the_money": true,
+          "last_price": 8.1,
+          "implied_vol": 0.7893087475585938,
+          "note": ""
+        },
+        {
+          "contract": "TMUS261127C00150000",
+          "type": "call",
+          "expiry": "2026-11-27",
+          "strike": 150.0,
+          "volume": 676.0,
+          "oi_start": 108.0,
+          "oi_after": 0.0,
+          "delta_oi": -108.0,
+          "in_the_money": true,
+          "last_price": 18.05,
+          "implied_vol": 0.858399853515625,
+          "note": ""
+        },
+        {
+          "contract": "TMUS261218C00135000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 135.0,
+          "volume": 645.0,
+          "oi_start": 106.0,
+          "oi_after": 8.0,
+          "delta_oi": -98.0,
+          "in_the_money": true,
+          "last_price": 33.8,
+          "implied_vol": 0.7478052563476563,
+          "note": ""
+        },
+        {
+          "contract": "TMUS270319C00190000",
+          "type": "call",
+          "expiry": "2027-03-19",
+          "strike": 190.0,
+          "volume": 581.0,
+          "oi_start": 877.0,
+          "oi_after": 1447.0,
+          "delta_oi": 570.0,
+          "in_the_money": false,
+          "last_price": 4.7,
+          "implied_vol": 0.360785200805664,
+          "note": ""
+        },
+        {
+          "contract": "TMUS261218C00200000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 200.0,
+          "volume": 530.0,
+          "oi_start": 5362.0,
+          "oi_after": 5360.0,
+          "delta_oi": -2.0,
+          "in_the_money": false,
+          "last_price": 0.12,
+          "implied_vol": 0.48950705810546885,
+          "note": ""
+        },
+        {
+          "contract": "TMUS270115C00110000",
+          "type": "call",
+          "expiry": "2027-01-15",
+          "strike": 110.0,
+          "volume": 390.0,
+          "oi_start": 96.0,
+          "oi_after": 0.0,
+          "delta_oi": -96.0,
+          "in_the_money": true,
+          "last_price": 58.7,
+          "implied_vol": 0.8457046679687499,
+          "note": ""
+        },
+        {
+          "contract": "TMUS261218C00150000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 150.0,
+          "volume": 357.0,
+          "oi_start": 669.0,
+          "oi_after": 593.0,
+          "delta_oi": -76.0,
+          "in_the_money": true,
+          "last_price": 20.9,
+          "implied_vol": 0.5065967309570312,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-11-25T04:41:33Z",
+        "options_fetched_at": "2026-11-25T04:41:33Z",
+        "options_last_trade_et": "2026-11-24T15:59:56-05:00",
+        "oi_after_fetched_at": "2026-11-25T20:45:12Z"
+      }
+    },
+    {
+      "rank": 2,
+      "symbol": "PM",
+      "name": "Philip Morris International",
+      "sector": "Consumer Staples",
+      "option_volume": 10766.0,
+      "baseline_median": 4191.0,
+      "option_volume_ratio": 2.568837986160821,
+      "option_volume_z": 2.028426567816325,
+      "option_volume_pctile": 96.66666666666667,
+      "baseline_n": 30,
+      "call_volume": 9100.0,
+      "put_volume": 1666.0,
+      "cp_ratio": 5.46218487394958,
+      "cp_ratio_30d": 1.1178227375063177,
+      "delta_oi_calls": 5842.0,
+      "delta_oi_puts": 498.0,
+      "top_open_share": 0.6658209496194273,
+      "oi_classification": "überwiegend neu eröffnet",
+      "oi_base_check": "OK",
+      "oi_consistency": "",
+      "price": {
+        "close": 183.9499969482422,
+        "return_1d": 0.007945188757491506,
+        "price_z": 0.4619844675221066,
+        "sector_etf": "XLP",
+        "sector_return_1d": 0.01659659267076674,
+        "stock_rel_volume_30d": 1.225254400055122
+      },
+      "events": {
+        "next_earnings": "UNAVAILABLE",
+        "days_to_earnings": "UNAVAILABLE",
+        "ex_dividend_date": "UNAVAILABLE",
+        "structural_event": "UNAVAILABLE"
+      },
+      "boring_hints_from_code": [],
+      "top_contracts": [
+        {
+          "contract": "PM270115C00200000",
+          "type": "call",
+          "expiry": "2027-01-15",
+          "strike": 200.0,
+          "volume": 5213.0,
+          "oi_start": 2102.0,
+          "oi_after": 6661.0,
+          "delta_oi": 4559.0,
+          "in_the_money": false,
+          "last_price": 1.95,
+          "implied_vol": 0.2569654382324219,
+          "note": ""
+        },
+        {
+          "contract": "PM261127C00182500",
+          "type": "call",
+          "expiry": "2026-11-27",
+          "strike": 182.5,
+          "volume": 665.0,
+          "oi_start": 15.0,
+          "oi_after": 588.0,
+          "delta_oi": 573.0,
+          "in_the_money": true,
+          "last_price": 2.6,
+          "implied_vol": 0.32398136962890617,
+          "note": ""
+        },
+        {
+          "contract": "PM261218C00200000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 200.0,
+          "volume": 574.0,
+          "oi_start": 3794.0,
+          "oi_after": 3673.0,
+          "delta_oi": -121.0,
+          "in_the_money": false,
+          "last_price": 0.78,
+          "implied_vol": 0.2771068383789062,
+          "note": ""
+        },
+        {
+          "contract": "PM261204C00190000",
+          "type": "call",
+          "expiry": "2026-12-04",
+          "strike": 190.0,
+          "volume": 469.0,
+          "oi_start": 36.0,
+          "oi_after": 450.0,
+          "delta_oi": 414.0,
+          "in_the_money": false,
+          "last_price": 1.4,
+          "implied_vol": 0.29614961669921874,
+          "note": ""
+        },
+        {
+          "contract": "PM261218P00170000",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 170.0,
+          "volume": 295.0,
+          "oi_start": 709.0,
+          "oi_after": 774.0,
+          "delta_oi": 65.0,
+          "in_the_money": false,
+          "last_price": 0.97,
+          "implied_vol": 0.3286199951171874,
+          "note": ""
+        },
+        {
+          "contract": "PM261218C00190000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 190.0,
+          "volume": 231.0,
+          "oi_start": 612.0,
+          "oi_after": 594.0,
+          "delta_oi": -18.0,
+          "in_the_money": false,
+          "last_price": 2.79,
+          "implied_vol": 0.28211167114257807,
+          "note": ""
+        },
+        {
+          "contract": "PM270319C00190000",
+          "type": "call",
+          "expiry": "2027-03-19",
+          "strike": 190.0,
+          "volume": 219.0,
+          "oi_start": 806.0,
+          "oi_after": 602.0,
+          "delta_oi": -204.0,
+          "in_the_money": false,
+          "last_price": 10.04,
+          "implied_vol": 0.29871306762695304,
+          "note": ""
+        },
+        {
+          "contract": "PM261218C00195000",
+          "type": "call",
+          "expiry": "2026-12-18",
+          "strike": 195.0,
+          "volume": 217.0,
+          "oi_start": 1988.0,
+          "oi_after": 2040.0,
+          "delta_oi": 52.0,
+          "in_the_money": false,
+          "last_price": 1.46,
+          "implied_vol": 0.2941965112304687,
+          "note": ""
+        },
+        {
+          "contract": "PM261218P00195000",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 195.0,
+          "volume": 205.0,
+          "oi_start": 601.0,
+          "oi_after": 606.0,
+          "delta_oi": 5.0,
+          "in_the_money": true,
+          "last_price": 11.88,
+          "implied_vol": 0.304694453125,
+          "note": ""
+        },
+        {
+          "contract": "PM261218P00165000",
+          "type": "put",
+          "expiry": "2026-12-18",
+          "strike": 165.0,
+          "volume": 189.0,
+          "oi_start": 455.0,
+          "oi_after": 641.0,
+          "delta_oi": 186.0,
+          "in_the_money": false,
+          "last_price": 0.55,
+          "implied_vol": 0.34326828613281246,
+          "note": ""
+        }
+      ],
+      "timestamps": {
+        "price_fetched_at": "2026-11-25T04:40:48Z",
+        "options_fetched_at": "2026-11-25T04:40:49Z",
+        "options_last_trade_et": "2026-11-24T15:59:59-05:00",
+        "oi_after_fetched_at": "2026-11-25T20:45:12Z"
+      }
+    }
+  ],
+  "elevated_not_candidates": [
+    {
+      "symbol": "SNDK",
+      "option_volume_z": 3.2944538660290372,
+      "option_volume_ratio": 3.031062574970012,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -2,2)"
+    },
+    {
+      "symbol": "TXN",
+      "option_volume_z": 3.0366467873855534,
+      "option_volume_ratio": 3.137158245469898,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "DELL",
+      "option_volume_z": 3.029153809885424,
+      "option_volume_ratio": 2.9027708164201758,
+      "reason": "OI-Veränderung: gemischt, nicht eindeutig"
+    },
+    {
+      "symbol": "DE",
+      "option_volume_z": 2.9536525246135743,
+      "option_volume_ratio": 4.057557217312485,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -1,5)"
+    },
+    {
+      "symbol": "MDT",
+      "option_volume_z": 2.801146609442914,
+      "option_volume_ratio": 5.970881110440555,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = -2,4)"
+    },
+    {
+      "symbol": "DUK",
+      "option_volume_z": 2.5331963761039193,
+      "option_volume_ratio": 3.19990537023894,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +1,1)"
+    },
+    {
+      "symbol": "ABBV",
+      "option_volume_z": 2.5011747931991537,
+      "option_volume_ratio": 2.3442501846835753,
+      "reason": "Kurs hat sich bereits deutlich bewegt (z = +3,0)"
+    }
+  ],
+  "incomplete": []
+}

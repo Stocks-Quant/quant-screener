@@ -1,12 +1,12 @@
 {
-  "latest_session": "2026-11-23",
-  "generated_at": "2026-11-24T21:35:41Z",
+  "latest_session": "2026-11-24",
+  "generated_at": "2026-11-25T20:45:14Z",
   "oi_status": "OK",
-  "n_candidates": 3,
+  "n_candidates": 2,
   "n_complete": 101,
   "files": {
-    "candidates.json": "data/sessions/2026-11-23/candidates.json",
-    "report.md": "data/sessions/2026-11-23/report.md",
-    "analysis.csv": "data/sessions/2026-11-23/analysis.csv"
+    "candidates.json": "data/sessions/2026-11-24/candidates.json",
+    "report.md": "data/sessions/2026-11-24/report.md",
+    "analysis.csv": "data/sessions/2026-11-24/analysis.csv"
   }
 }
