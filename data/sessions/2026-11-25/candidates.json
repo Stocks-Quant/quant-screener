@@ -1,0 +1,456 @@
+{
+  "session": "2026-11-25",
+  "generated_at": "2026-11-26T20:37:04Z",
+  "status": "OK",
+  "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
+  "oi_status": "STALE",
+  "n_tickers": 101,
+  "n_complete": 0,
+  "n_baseline_ok": 101,
+  "min_history": 15,
+  "market_elevated_share": 0.039603960396039604,
+  "rules": {
+    "unusual": "robustes z des Optionsvolumens >= 2.0 und mindestens 2.0x Median der eigenen letzten 30 Tage",
+    "opened": "OI an den aktivsten Kontrakten gestiegen um >= 30 % ihres Volumens",
+    "price_quiet": "|Kurs-z| < 1.0 (Tagesrendite relativ zur eigenen 20-Tage-Volatilität)",
+    "ranking": "nach Ungewöhnlichkeit relativ zur eigenen Historie, nicht nach absoluter Größe"
+  },
+  "cannot_determine": [
+    "ob das Volumen Käufe oder Verkäufe waren (jeder Kontrakt hat einen Käufer und einen Verkäufer)",
+    "ob der Handel für die Gegenseite eröffnend oder schließend war",
+    "ob es sich um eine Richtungswette oder um eine Absicherung handelt"
+  ],
+  "candidates": [],
+  "elevated_not_candidates": [
+    {
+      "symbol": "SNDK",
+      "option_volume_z": 4.3165267058552255,
+      "option_volume_ratio": 5.178378596831555,
+      "reason": "OI-Veränderung nicht verfügbar: ohne sie ist die Aktivität kein Beleg für irgendetwas"
+    },
+    {
+      "symbol": "NEE",
+      "option_volume_z": 3.586875973777351,
+      "option_volume_ratio": 6.806256271843316,
+      "reason": "OI-Veränderung nicht verfügbar: ohne sie ist die Aktivität kein Beleg für irgendetwas"
+    },
+    {
+      "symbol": "DELL",
+      "option_volume_z": 2.8563634275665084,
+      "option_volume_ratio": 3.0909918758415236,
+      "reason": "OI-Veränderung nicht verfügbar: ohne sie ist die Aktivität kein Beleg für irgendetwas"
+    },
+    {
+      "symbol": "DE",
+      "option_volume_z": 2.377499524648332,
+      "option_volume_ratio": 3.9479254868755294,
+      "reason": "OI-Veränderung nicht verfügbar: ohne sie ist die Aktivität kein Beleg für irgendetwas"
+    }
+  ],
+  "incomplete": [
+    {
+      "symbol": "AAPL",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "ABBV",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "ABT",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "ACN",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "ADBE",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "AMAT",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "AMD",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "AMGN",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "AMT",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "AMZN",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "ANET",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "AVGO",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "AXP",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "BA",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "BAC",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "BKNG",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "BLK",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "BMY",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "BNY",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "BRK.B",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "C",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "CAT",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "CMCSA",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "COF",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "COP",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "COST",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "CRM",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "CSCO",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "CVS",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "CVX",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "DE",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "DELL",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "DHR",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "DIS",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "DUK",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "EMR",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "FDX",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "GD",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "GE",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "GEV",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "GILD",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "GM",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "GOOG",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "GOOGL",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "GS",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "HD",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "IBM",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "INTC",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "INTU",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "ISRG",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "JNJ",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "JPM",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "KO",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "LIN",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "LLY",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "LMT",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "LOW",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "LRCX",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MA",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MCD",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MDLZ",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MDT",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "META",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MMM",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MO",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MRK",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MS",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MSFT",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "MU",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "NEE",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "NFLX",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "NOW",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "NVDA",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "ORCL",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "PANW",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "PEP",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "PFE",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "PG",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "PLTR",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "PM",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "QCOM",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "RTX",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "SBUX",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "SCHW",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "SNDK",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "SO",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "T",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "TMO",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "TMUS",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "TSLA",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "TXN",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "UBER",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "UNH",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "UNP",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "UPS",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "USB",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "V",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "VZ",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "WFC",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "WMT",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    },
+    {
+      "symbol": "XOM",
+      "issues": "OI-Veränderung UNAVAILABLE (Morgen-Lauf: STALE)"
+    }
+  ]
+}
