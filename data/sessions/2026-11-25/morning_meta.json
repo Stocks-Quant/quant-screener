@@ -2,9 +2,9 @@
   "run": "morning",
   "status": "OK",
   "session": "2026-11-25",
-  "started_at": "2026-11-26T23:56:43Z",
-  "finished_at": "2026-11-27T00:03:21Z",
-  "attempt": 3,
+  "started_at": "2026-11-27T00:59:48Z",
+  "finished_at": "2026-11-27T01:02:28Z",
+  "attempt": 4,
   "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
   "oi_status": "TEILWEISE",
   "oi_unchanged_share": 0.38613861386138615,
@@ -51,8 +51,8 @@
     "XOM"
   ],
   "oi_failed_symbols": [],
-  "symbols_kept_from_previous_attempt": 0,
-  "request_count": 914,
+  "symbols_kept_from_previous_attempt": 62,
+  "request_count": 355,
   "errors": [],
   "note": "oi_after ist das Open Interest nach Abschluss des Handelstags (Veröffentlichung über Nacht). STALE: die Quelle zeigt überwiegend noch den alten Stand. TEILWEISE: einzelne Ticker alt oder nicht abrufbar, deren Veränderung ist UNAVAILABLE. Weitere Versuche holen nur diese Ticker neu."
 }

@@ -1,6 +1,6 @@
 # Trefferquote des Screeners
 
-Stand 2026-11-27T00:03:24Z. Treffer: |Überrendite ggü. Sektor-ETF nach 10 Handelstagen| >= 2.0 Sigma (Sigma aus 60 Tagen vor dem Signal).
+Stand 2026-11-27T01:02:30Z. Treffer: |Überrendite ggü. Sektor-ETF nach 10 Handelstagen| >= 2.0 Sigma (Sigma aus 60 Tagen vor dem Signal).
 
 Zeitraum der Signale: 2026-10-13 bis 2026-11-11.
 

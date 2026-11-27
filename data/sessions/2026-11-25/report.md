@@ -1,6 +1,6 @@
 # Optionsaktivität: Analyse für den Handelstag 2026-11-25
 
-Erstellt 2026-11-27T00:03:23Z aus Dateien des Datenagenten. Quelle: Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert).
+Erstellt 2026-11-27T01:02:29Z aus Dateien des Datenagenten. Quelle: Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert).
 Open Interest nach Handelsschluss: **TEILWEISE**. Vollständige Datensätze: 62 von 101. Mit ausreichender Baseline (15 Tage): 101.
 Anteil des Universums mit erhöhtem Optionsvolumen: 4 %.
 
