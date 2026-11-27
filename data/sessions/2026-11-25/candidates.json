@@ -1,11 +1,11 @@
 {
   "session": "2026-11-25",
-  "generated_at": "2026-11-27T01:02:29Z",
+  "generated_at": "2026-11-27T20:19:16Z",
   "status": "OK",
   "source": "Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert)",
-  "oi_status": "TEILWEISE",
+  "oi_status": "OK",
   "n_tickers": 101,
-  "n_complete": 62,
+  "n_complete": 101,
   "n_baseline_ok": 101,
   "min_history": 15,
   "market_elevated_share": 0.039603960396039604,
@@ -47,162 +47,5 @@
       "reason": "OI-Veränderung: gemischt, nicht eindeutig"
     }
   ],
-  "incomplete": [
-    {
-      "symbol": "ABBV",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "AMD",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "AMT",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "AMZN",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "ANET",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "BAC",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "BMY",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "BRK.B",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "C",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "CMCSA",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "CSCO",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "CVS",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "CVX",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "DIS",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "GILD",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "GM",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "GOOG",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "GOOGL",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "HD",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "INTC",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "KO",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "LMT",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "MCD",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "MDLZ",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "MO",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "MSFT",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "NOW",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "ORCL",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "PFE",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "PLTR",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "PM",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "SBUX",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "T",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "UBER",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "UPS",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "USB",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "VZ",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "WMT",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    },
-    {
-      "symbol": "XOM",
-      "issues": "OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar)"
-    }
-  ]
+  "incomplete": []
 }

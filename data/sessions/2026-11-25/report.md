@@ -1,7 +1,7 @@
 # Optionsaktivität: Analyse für den Handelstag 2026-11-25
 
-Erstellt 2026-11-27T01:02:29Z aus Dateien des Datenagenten. Quelle: Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert).
-Open Interest nach Handelsschluss: **TEILWEISE**. Vollständige Datensätze: 62 von 101. Mit ausreichender Baseline (15 Tage): 101.
+Erstellt 2026-11-27T20:19:16Z aus Dateien des Datenagenten. Quelle: Yahoo Finance via yfinance 1.8.0 (inoffizielle Schnittstelle, Daten verzögert).
+Open Interest nach Handelsschluss: **OK**. Vollständige Datensätze: 101 von 101. Mit ausreichender Baseline (15 Tage): 101.
 Anteil des Universums mit erhöhtem Optionsvolumen: 4 %.
 
 Dieser Bericht beschreibt Aktivität. Er bewertet sie nicht als bullisch oder bärisch und empfiehlt keinen Trade.
@@ -37,12 +37,11 @@ Heute nichts, das alle drei Bedingungen erfüllt.
 | JPM | 1,3 | 1,5x | 0,67 | 1,07 | gemischt, nicht eindeutig | -0,1 |  |
 | BA | 1,3 | 1,7x | 0,19 | 0,77 | gemischt, nicht eindeutig | +0,3 |  |
 | LRCX | 1,2 | 1,8x | 1,62 | 1,24 | gemischt, nicht eindeutig | -0,8 |  |
-| HD | 1,1 | 1,8x | 1,11 | 1,59 | UNAVAILABLE | +0,9 |  |
+| HD | 1,1 | 1,8x | 1,11 | 1,59 | überwiegend geschlossen | +0,9 |  |
 
 ## Datenlücken
 
-39 Ticker unvollständig. Häufigste Gründe:
-* OI-Veränderung UNAVAILABLE (Quelle für diesen Ticker nicht aktualisiert oder nicht abrufbar): 39
+Keine.
 
 ---
 Screener, kein Signal. Ungewöhnliche Aktivität ist ein Grund, sich ein Unternehmen anzusehen, kein Grund, eine Position einzugehen. Daten verzögert und inoffiziell: vor jeder Entscheidung an der Quelle prüfen.

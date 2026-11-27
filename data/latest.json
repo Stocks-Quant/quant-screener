@@ -1,9 +1,9 @@
 {
   "latest_session": "2026-11-25",
-  "generated_at": "2026-11-27T01:02:29Z",
-  "oi_status": "TEILWEISE",
+  "generated_at": "2026-11-27T20:19:16Z",
+  "oi_status": "OK",
   "n_candidates": 0,
-  "n_complete": 62,
+  "n_complete": 101,
   "files": {
     "candidates.json": "data/sessions/2026-11-25/candidates.json",
     "report.md": "data/sessions/2026-11-25/report.md",
